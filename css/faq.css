@@ -1,0 +1,58 @@
+/* --------------常見問題------------- */
+.banner_faq{}
+.banner_faq img{
+    width:100%;
+    height:500px;
+    display:block;
+ }
+ .banner_faq h2{
+     margin-top: 50px;
+     text-align: center;
+ }
+.faq_container{
+    margin-top: 50px;
+}
+
+.faq_container ul{
+    
+    display: flex;
+    width:1000px;
+    margin: 0 auto;
+}
+.faq_container li{
+    margin-left: 160px;
+    
+}
+.faq_container img{
+    width: 100px;
+}
+.faq_container h4{
+    margin-top: 50px;
+}   
+
+.faq_main{
+    background-color: #F8E2CF;
+    width: 800px;
+    line-height: 3;
+    padding-left:200px;
+    margin: 50px auto;
+    
+}
+.faq_question{
+    display:flex;
+    position: relative;
+}
+.faq_question img{
+    
+    width:50px;
+}
+.faq_question p{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+.faq_openbnt i{
+    margin-left: 80px;
+    color:#90AACB;
+}
+

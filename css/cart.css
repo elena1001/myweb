@@ -1,0 +1,143 @@
+/* -------購物車--------- */
+.banner_cart{
+    
+}
+.banner_cart img{
+    width:100%;
+    height:500px;
+    display:block;
+ }
+ .banner_cart h2{
+     margin-left: 50px;
+     margin-top: 50px;
+     text-align: center;
+ }
+
+ .top_cart{
+    width: 100%;
+ }
+ .top_cart ul{
+     display: flex;
+     width:1000px;
+     margin: 0 auto;
+     padding-left: 180px;
+     padding-top: 50px;
+ }
+ .top_cart li{
+     margin-left: 10px;
+ }
+ .top_cart h3{}
+ .top_cart span{
+     display: block;
+     width:80px;
+     height:5px;
+     background-color: #90AACB;
+     margin-top: 10px;
+ }
+
+ .main_cart{}
+ .main_carttop{
+    width:100%;
+    
+ }
+ .main_carttop ul{
+     display: flex;
+     width:800px;
+     margin: 0 auto;
+     margin-top: 50px;
+     line-height: 2;
+     background-color: #90AACB;
+ }
+ .main_carttop li{
+     font-size: 20px;
+     color:#fff;
+     margin: 0 auto;
+    
+ }
+.main_cartmid{
+    
+}
+.main_cartmid ul{
+    display:flex;
+    width:800px;
+    background-color:#F6E0CE;
+    margin: 0 auto;
+    padding-top:50px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    
+}
+.main_cartmid li{
+    
+    flex-grow: 1;
+}
+.main_cartmid img{
+    width:150px;
+    height:100px;
+    
+}
+.main_cartmid h5{
+    margin-top: 50px;
+    
+}
+.main_cartmid .count{
+    background-color: #F0C3A7;
+    text-align: center;
+    line-height: 1.8;
+    width: 30px;
+    height:30px;
+}
+.main_cartbottom{}
+.main_cartbottom ul{
+    width:800px;
+    background-color:#F6E0CE;
+    margin: 0 auto;
+    padding-left: 40px;
+    border-top:2px dotted #fff;
+}
+.main_cartbottom li{
+    line-height: 1.6;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.main_cartbottom .line{}
+.main_cartbottom h5{
+    padding-left: 550px;
+}
+
+.downcart{
+    padding-top: 50px;
+}
+
+.downcart_produ{}
+.downcart_produ h4{
+    text-align: center;
+    background-color: #FCD8D4;
+    margin: 0 auto;
+    width: 800px;
+    height:50px;
+    padding-top: 20px;
+}
+.downcart_produ ul{
+    display: flex;
+    width: 800px;
+    padding-top: 50px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+    background-color: #FCD8D4;
+}
+.downcart_produ li{
+    
+    margin-left: 30px;
+}
+.downcart_produ img{
+    width:150px;
+    margin-bottom: ;
+}
+.downcart_produ p{}
+.downcart_produ i{
+    color:#F0C3A7;
+    margin-top: 70px;
+}
