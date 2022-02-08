@@ -80,4 +80,7 @@
     line-height: 1.6;
 }
 
-
+.product1_right input:hover{
+    color:#90AACB;
+    cursor: pointer;
+}
