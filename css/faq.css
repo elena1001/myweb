@@ -34,13 +34,13 @@
     background-color: #F8E2CF;
     width: 800px;
     line-height: 3;
-    padding-left:200px;
+    padding: 0 40px;
     margin: 50px auto;
-    
 }
 .faq_question{
     display:flex;
     position: relative;
+    justify-content: space-between;
 }
 .faq_question img{
     
@@ -52,7 +52,7 @@
     margin-top: 5px;
 }
 .faq_openbnt i{
-    margin-left: 80px;
+    
     color:#90AACB;
 }
 

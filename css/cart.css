@@ -24,9 +24,8 @@
      padding-top: 50px;
  }
  .top_cart li{
-     margin-left: 10px;
+     margin-left: 20px;
  }
- .top_cart h3{}
  .top_cart span{
      display: block;
      width:80px;
@@ -116,7 +115,7 @@
     margin: 0 auto;
     width: 800px;
     height:50px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 .downcart_produ ul{
     display: flex;
@@ -136,7 +135,9 @@
     width:150px;
     margin-bottom: ;
 }
-.downcart_produ p{}
+.downcart_produ p{
+    margin-top: 20px;
+}
 .downcart_produ i{
     color:#F0C3A7;
     margin-top: 70px;
