@@ -687,16 +687,17 @@ ul > li:hover ol{
 
 /* ------------登入頁面-------------- */
 .wrapper_login{
-    
+    width: 1440px;
+    position:fixed;
 }
 .wrapper_login img{
     width: 100%;
 }
 .wrapper_login ul{
     margin: 0 auto;
-    position:fixed;
     display:flex;
     padding-left: 200px;
+    position: relative;
 }
 .wrapper_login li{
     background-size:cover;
@@ -743,11 +744,12 @@ ul > li:hover ol{
     background-color: #F3EEEC;
     color: #D57149;
     border: none;
-    margin-top: 50px;
-    margin-left: 180px;
     line-height: 4;
     font-weight: bold;
     font-size: 14px;
+    position:absolute;
+    left: 926px;
+    top: 306px;
 }
 .loginbtn{
     width: 200px;
@@ -756,11 +758,12 @@ ul > li:hover ol{
     background-color: #F3EEEC;
     color: #D57149;
     border: none;
-    margin-top: -58px;
-    margin-left: 400px;
     line-height: 4;
     font-weight: bold;
     font-size: 14px;
+    position:absolute;
+    left: 1150px;
+    top: 306px;
 }
 .forgotbtn{
     width: 200px;
@@ -769,16 +772,20 @@ ul > li:hover ol{
     background-color: #F3EEEC;
     color: #D57149;
     border: none;
-    margin-top: 30px;
-    margin-left: 290px;
+ 
     line-height: 4;
     font-weight: bold;
     font-size: 14px;
+    position:absolute;
+    left: 1034px;
+    top: 413px;
 }
 .login_right img{
     width: 80px;
-    margin-top: 55px;
-    margin-left: 350px;
+
+    position:absolute;
+    left: 1100px;
+    top: 546px;
 }
 /* --------------常見問題------------- */
 .banner_faq{}
