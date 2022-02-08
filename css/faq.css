@@ -11,37 +11,45 @@
  }
 .faq_container{
     margin-top: 50px;
+    
 }
 
 .faq_container ul{
-    
     display: flex;
     width:1000px;
     margin: 0 auto;
 }
 .faq_container li{
     margin-left: 160px;
-    
 }
 .faq_container img{
     width: 100px;
 }
-.faq_container h4{
+.faq_container a{
+    display: block;
     margin-top: 50px;
+    text-align: center;
+    text-decoration: none;
+    color:#D57149;
+    font-size: 20px;
 }   
-
+.faq_container a:hover{
+    color:#90AACB;
+}
 .faq_main{
     background-color: #F8E2CF;
     width: 800px;
     line-height: 3;
-    padding: 0 40px;
+    padding: 0 50px;
     margin: 50px auto;
+    
 }
 .faq_question{
     display:flex;
     position: relative;
     justify-content: space-between;
 }
+
 .faq_question img{
     
     width:50px;
