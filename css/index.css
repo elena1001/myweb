@@ -3,14 +3,34 @@
     box-sizing: border-box;
 }
 /* -- -------主頁大畫面------  */
-.wrapper{
+.banner{
     position: relative;
-}
-.wrapper img:first-child{
-    width:100%;
-    height:600px;
-    display:block;
-}
+    max-width:1600px;
+    height: 600px;
+  }
+  .banner video{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .banner h2{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    text-align: center;
+    line-height:600px;
+    font-family:Papyrus;
+    font-weight: bold;
+    text-transform:uppercase;
+    mix-blend-mode: screen;
+
+  }
 .scroll{
     width:20px;
     
@@ -198,8 +218,9 @@
 }
 
 /* -------主頁ig組圖-------------- */
-.main4 img{
-    display: block;
-    width: 100%; 
-    height: 550px;
+.main4 {
+    height:700px;
+    background-image: url(../mainpage/ig.png);
+    background-size: cover;
+
 }

@@ -1,19 +1,68 @@
-
-/* ----------------品牌起源-------------- */
 .banner_about{
+
 }
 .banner_about img{
   width:100%;
-  height:500px;
-  display:block;
 }
+
+.background_about{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 50%;
+}
+.background_about img{
+  min-height: 100%;
+  width: 100%;
+}
+
+  /* max-width:100%;
+  height:500px;
+  display:block; */
 
 .main_about{
   position: relative;
+  margin-top: 50px;
+}
+.main_about> p{
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: #FFB085 2px 3px 3px;
+  line-height: 50px;
 }
 .main_about h2{
    text-align: center;
-   margin-bottom: 100px;
+   font-weight: bolder;
+   text-shadow: #FFB085 2px 3px 3px;
+}
+
+.main_about h2:before{
+  content:url("https://i.imgur.com/rNXOBiE.png");
+  position:absolute;
+  top:100px;
+  left:671px;
+  width:20px;
+  height:20px;
+  z-index: -1;
+  /* height:20px; */
+  /* border-radius:50%;
+  background:#90AACB; */
+  -webkit-animation:news_title  .8s infinite ; 
+  
+}
+@-webkit-keyframes news_title{
+  0%{
+    top:60px;
+  }
+  50%{
+    top:80px; 
+  }
+  100%{
+    top:60px;
+  }
 }
 .mid_about{
    max-width: 200px;
@@ -23,7 +72,7 @@
    left:0;
    right:0;
    margin:auto;
-  
+  margin-top: 50px;
 }
 .movecake{
   position: sticky;
@@ -33,6 +82,9 @@
 .movecake img{
   margin-top: 100px;
    width:200px;
+}
+.movecake img:hover{
+  
 }
 .blueline img{
   position:absolute;
@@ -48,9 +100,34 @@
 }
 .main_about li{
   width:250px;
+  margin-top: 100px;
 }
 .main_about li img{
   width: 100%;
+  
+}
+
+.about_move img:hover{
+  border-radius: 50%;
+  -webkit-animation:about_move  4s infinite ; 
+    
+}
+@-webkit-keyframes about_move{
+  0%{
+    transform:rotate(0deg);
+  }
+  30%{
+    transform:rotate(60deg); 
+  }
+  60%{
+    transform:rotate(0deg); 
+  }
+  80%{
+    transform:rotate(-60deg); 
+  }
+  100%{
+    transform:rotate(0deg);
+  }
 }
 .about1{
   margin-right: 0;

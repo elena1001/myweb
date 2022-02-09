@@ -1,4 +1,4 @@
-/* ------------登入頁面-------------- */
+
 .wrapper_login{
     display: flex;
     
@@ -10,13 +10,14 @@
 .login_ri{
     background-color: #F0C3A7;
     width: 50%;
+    padding-top: 50px;
 }
 
 .login_right{
     cursor: pointer;
 }
 .login_ri_top{
-    
+ 
 }
 .login_ri_top a{
     display: block;
@@ -43,6 +44,7 @@
     color: #D57149;
     font-weight: bold;
     font-size: 14px;
+    padding: 10px;
 }
 .login_ri_mid{
     display: flex;

@@ -1,64 +1,69 @@
-/* ----------------商品列表---------------- */
-.banner_product{
-    
+main{
 }
-.banner_product img{
+main>img{
    width:100%;
-   height:500px;
-   display:block;
+   margin-bottom: 50px;
+   display: block;
 }
-
-.pro_main{
-    padding-top:50px;
-   width: 100%; 
-}
-.pro_main h2{
+main p{
    text-align: center;
-   margin-top: 20px;
+   font-weight: bolder;
+   text-shadow: #FFB085 2px 3px 3px;
+   line-height: 50px;
 }
-.pro_main ul{
+main h2{
+   text-align: center;
+   font-weight: bolder;
+   text-shadow: #FFB085 2px 3px 3px;
+   margin-bottom: 50px;
+}
+.products_list{
    display: flex;
    width:1200px;
-   margin: 0 auto;
-   padding-top:250px;
+   margin:0 auto;
+   background-color: #f5c6aac0;
 }
-.pro_main li{
-  margin:0 auto;
+.products_list ul{
+   display: flex; 
+   flex-direction: column;
 }
-.pro_main img{
-   display:block;
-   width:200px;
-   clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+.products_list img{
+   width:50%;
+   display: block;
 }
-.pro_main a{
+.products_list img:hover{
+   transform-origin:0;
+   transform:scale(1.2,1);
+}
+.products_list img:hover:nth-child(2){
+   transform-origin:(0);
+   transform:scale(1.2,1);
+}
+.products_list li{      
    text-align: center;
-   display:block;
+   align-items: center;
+   padding: 0 50px;
+   margin-top: 20px;
+}
+.products_list li:first-child{
+   padding-top: 100px;
+}
+.products_list h2{
+   font-weight: bolder;
+   text-shadow: #FFB085 2px 3px 3px;
+}
+.products_list a{
+   display: block;
    text-decoration: none;
-   margin-top: 30px;
-   color:#D57149;
-   margin-bottom: 300px;
 }
-.pro_main a:hover{
-   color:#90AACB;
+
+.products_list p{
+   line-height: 2;
+   font-size: 20px;
 }
-.twoline{
-   position:relative;
-   z-index: -1;
+.products_list1{
+   background-color: #FDF6F0;
 }
-.line1 span{
-   position:absolute;
-   width:1100px;
-   height:500px;
-   left: 214px;
-   top: -676px;
-   border: 5px solid #90AACB;
-}
-.line2 span{
-   position:absolute;
-   width:1100px;
-   height:500px;
-   left: 176px;
-   top: -707px;
-   border: 5px solid #FFB085;
-   
+.products_list2{
+   background-color: #FCD8D4;
 }
