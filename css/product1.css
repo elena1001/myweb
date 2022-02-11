@@ -20,7 +20,7 @@ aside a{
 }
 aside a:hover{
     color:#90AACB;
-
+    border-bottom: 5px dotted #F0C3A7;
 }
 /* -----右邊內容------ */
 
@@ -44,54 +44,6 @@ aside a:hover{
     padding-left: 60px;
     font-weight: bolder;
 }
-/* --------商品排序------- */
-.select_bnt{
-    float:right;
-    width:300px;
-
-}
-.select_bnt span{
-    display: block;
-    padding: 10px 20px 10px 10px;
-    position: relative;
-    cursor: pointer;
-}
-/* .select_bnt span:after{
-    content:"";
-width: 0;
-height: 0;
-border-style: solid;
-  border-width: 6px 0 6px 12px;
-  border-color: transparent transparent transparent #fff;
-  position: absolute;
-  right: 15%;
-  z-index: 2;
-} */
-.select_bnt ul{
-    position: relative;
-}
-.select_bnt li{
-    position: absolute;
-    z-index: 1;
-    left: 561px;
-    top: 20px;
-    display: none;
-   
-  }
-  
-  .select_bnt ul>li{
-      display: block;
-      line-height: 40px;
-      width: 200px;
-      text-align: center;
-      color: #D57149;
-      background-color: #F8E2CF;
-      text-decoration: none;
-      
-  }
-  .select_bnt ul > li:hover {
-      display: block;
-    }
 .products_list{
     display: flex;
     flex-wrap: wrap;
@@ -107,12 +59,14 @@ border-style: solid;
 .products_list li{
     text-align: center;
     margin-top: 20px;
+    margin: 0 auto;
+    
 }
 .products_list h4{
-
+    margin-top: 20px;
 }
 .products_list p{
-    
+    margin-top: 10px;
 }
 .products_list a{
     display: block;
@@ -120,20 +74,6 @@ border-style: solid;
     overflow: hidden;
     position: relative;
 }
-.cc h3{
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    margin: 0 auto;
-    border-radius: 5px;
-    font-size: 18px;
-    padding: 5px;
-    background-color:#FFF ;
-    opacity: 1;
-    
-}
-
 .products_list span{
     position: absolute;
     top: 0;
@@ -146,6 +86,14 @@ border-style: solid;
     color:#fff;
     font-weight: bolder;
     line-height: 200px;
+}
+.pro_intro{
+    background-color: red;
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .products_list span:hover{
     opacity: 1;

@@ -20,8 +20,8 @@
             <li class="nav_a"><a href="./product.html" >商品列表</a>
              <ol>
                 <li><a href="./product1.html">塔派系列</a></li>
-                <li><a href="./product1.html">蛋糕系列</a></li>
-                <li><a href="./product1.html">季節限定</a></li>
+                <li><a href="./product2.html">蛋糕系列</a></li>
+                <li><a href="./product3.html">季節限定</a></li>
             </ol>
              </li>
             <li class="nav_a"><a href="./faq.html">常見問題</a></li>
@@ -31,7 +31,6 @@
       </header> 
         <!-- ---------購物車----------- -->
         <div class="banner_cart">
-            <img src="./cart/strawberrybanner.png" alt="">
             <h2>購物車</h2>
         </div>
         <div class="wrapper_cart">
@@ -62,51 +61,55 @@
                         <li>數量</li>
                         <li>價格</li>
                         <li>總計</li>
+                        <li>刪除</li>
                     </ul>
                 </div>
                 <div class="main_cartmid">
                     <ul>
                         <li>
-                            <img src="./cart/istockphoto-467007219-170667a.jpg" alt="">
+                            <img src="./product/products1.png" alt="">
                         </li>
                         <li>
-                            <h5>栗子蒙布朗</h5>
+                            <h5>草莓乳酪塔</h5>
                         </li>
                         <li>
-                            <h5 class="count">1</h5>
+                            <input class="amount_number" type="number" name="" id="number" placeholder="1" min="1" max="10" onchange="calculatePrice()"></h5>
                         </li>
                         <li>
-                            <h5>NT$100</h5>
+                            <h5>NT$750</h5>
                         </li>
                         <li>
-                            <h5>NT$100</h5>
+                            <h5>NT$750</h5>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-trash-alt"></i></a>
                         </li>
                     </ul>
                 </div>
                 <div class="main_cartmid">
                     <ul>
                         <li>
-                            <img src="./cart/istockphoto-467007219-170667a.jpg" alt="">
+                            <img src="./product/products1.png" alt="">
                         </li>
                         <li>
-                            <h5>栗子蒙布朗</h5>
+                            <h5>草莓乳酪塔</h5>
                         </li>
                         <li>
-                            <h5 class="count">1</h5>
+                            <input class="amount_number" type="number" name="" id="number" placeholder="1" min="1" max="10" onchange="calculatePrice()">
                         </li>
                         <li>
-                            <h5>NT$100</h5>
+                            <h5>NT$750</h5>
                         </li>
                         <li>
-                            <h5>NT$100</h5>
+                            <h5>NT$750</h5>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-trash-alt"></i></a>
                         </li>
                     </ul>
                 </div>
                 <div class="main_cartbottom">
                     <ul>
-                        <li>
-                            <span class="line"></span>
-                        </li>
                         <li>
                             <h5>商品小計:NT$100</h5>
                         </li>
@@ -175,5 +178,6 @@
           </li>
           </ul> 
         </div>
+        
 </body>
 </html>

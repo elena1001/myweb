@@ -12,97 +12,83 @@
    
 </head>
 <body>
-    <!-- -----導覽列----- -->
-        <header class="header">
-          <h1><a href="./index.html" ><img src="./header/logo.png" alt="" class="navimg"></img></a></h1>
+<!-- -----導覽列----- -->
+  <header class="header">
+    <h1><a href="./index.html" ><img src="./header/logo.png" alt="" class="navimg"></img></a></h1>
+    <ul>
+        <li class="nav_a"><a href="./about.html" class="nav_a">品牌起源</a></li>
+        <li class="nav_a"><a href="./news1.html" >最新消息</a></li>
+        <li class="nav_a"><a href="./product.html" >商品列表</a>
+        <ol>
+            <li><a href="./product1.html">塔派系列</a></li>
+            <li><a href="./product2.html">蛋糕系列</a></li>
+            <li><a href="./product1.html">季節限定</a></li>
+        </ol>
+        </li>
+        <li class="nav_a"><a href="./faq.html">常見問題</a></li>
+        <li class="user"><a href="./login.html"><img src="./header/icon/user.png" alt="" ></a></li>
+        <li class="shop"><a href="./cart.html"><img src="./header/icon/shopping-cart.png" alt="" ></a></li>
+    </ul>
+  </header>   
+
+<!-- -------主頁大畫面------ -->
+  <div class="banner">
+    <video src="./mainpage/cake.mp4" autoplay muted loop></video>
+    <h2>LIZI'S CAKE HOUSE</h2>
+  </div>
+
+ 
+
+  <!-- -------品牌起源----------- -->
+  <div class="index_about">
+    <img src="./mainpage/index_about.png" alt="">
+    <div class="index_aboutri">
+      <h2>品牌起源</h2>
+      <p>Lizi’s cake house 創立於西元2021年10月1日，創辦人認為世界上沒有甚麼困難的事跟過不去的坎，如果有，那就吃甜點吧。</p>
+    </div>
+  </div>
+
+  <!-- ---------最新消息---------- -->
+
+  <div class="index_news">
+    <a href="./news1.html"><h2>News</h2></a>
+  </div>
+
+   <!-- ---- ----------商品列表----------------- -->
+   <div class="main3">
+      <h2>商品列表</h2>
+      <ul>
+        <li>
+          <img src="./product1/product2.png" alt="">
+          <a href="./product1.html">塔派系列</a>
+        </li>
+        <li>
+          <img src="./mainpage/chocolatecake.png" alt="">
+          <a href="./product2.html">蛋糕系列</a>
+        </li>
+        <li>
+          <img src="./mainpage/cake.png" alt="">
+          <a href="./product3.html">季節限定</a>
+        </li>
+      </ul>
+    </div>
+ <!-- -----------商品輪播---------------- -->
+      <main>
+        <div class="product_carousel">
           <ul>
-              <li class="nav_a"><a href="./about.html" class="nav_a">品牌起源</a></li>
-              <li class="nav_a"><a href="./news1.html" >最新消息</a></li>
-              <li class="nav_a"><a href="./product.html" >商品列表</a>
-               <ol>
-                  <li><a href="./product1.html">塔派系列</a></li>
-                  <li><a href="./product1.html">蛋糕系列</a></li>
-                  <li><a href="./product1.html">季節限定</a></li>
-              </ol>
-               </li>
-              <li class="nav_a"><a href="./faq.html">常見問題</a></li>
-              <li class="user"><a href="./login.html"><img src="./header/icon/user.png" alt="" ></a></li>
-              <li class="shop"><a href="./cart.html"><img src="./header/icon/shopping-cart.png" alt="" ></a></li>
+            <li><img src="./product1/product3.png" alt=""></li>
+            <li><img src="./product1/product4.png" alt=""></li>
+            <li><img src="./product1/product5.png" alt=""></li>
+            <li><img src="./product1/product3.png" alt=""></li>
+            <li><img src="./product1/product4.png" alt=""></li>
+            <li><img src="./product1/product5.png" alt=""></li>
           </ul>
-        </header> 
-      <!-- -------主頁大畫面------ -->
-      <div class="banner">
-        <video src="./mainpage/cake.mp4" autoplay muted loop></video>
-        <h2>LIZI'S CAKE HOUSE</h2>
-      </div>
-
-       <!-- <div class="connet">
-        <h4>或許平日的辛勞總讓你<br>遺忘了小時候<br>那甜甜無憂的時光<br>但秋日裡那四處飄起的栗子香氣卻牢牢鐫刻<br>在記憶裡...</h4>
-       </div> -->
-
-      <!-- -------品牌起源------------ -->
-      <div class="main1">
-        <div class="main1_1">
-        <h2>品牌起源</h2>
-        <p>Lizi’s cake house 創立於西<br>2021年10月1日，創辦人認<br>為世界上沒有甚麼困難的事跟<br>過不去的坎，如果有，那就吃<br>甜點吧。</p>
-        <a href="./about.html">MORE...</a>
         </div>
-        <img src="./mainpage/main_about.png" alt="">
-      </div>
+      </main>
 
-      <!-- ---------最新消息---------- -->
-      <div class="main2">
-        <h2>最新消息</h2>
-        <ul>
-          <li>
-            <!-- <img src="./mainpage/72ppi/資產 8@72x.png" alt="" class="deco1"> -->
-            <i class="fas fa-angle-left"></i>
-          </li>
-          <li>
-            <!-- <img src="./mainpage/72ppi/資產 8@72x.png" alt="" class="deco2"> -->
-            <img src="./mainpage/lemoncake.png" alt="">
-            <a href="./news.html">人氣商品回來了!!</a>
-          </li>
-          <li>
-            <!-- <img src="./mainpage/72ppi/資產 8@72x.png" alt="" class="deco3"> -->
-            <img src="./mainpage/xmascake.png" alt="">
-            <a href="./news.html">聖誕糕點預購中</a>
-          <li>
-            <img src="./mainpage/berrycake.png" alt="">
-             <a href="./news.html">草莓季來了!!!!!</a>
-          <li>
-            <i class="fas fa-angle-right"></i>
-          </li>
-          
-        </ul>
-        <div class="deco">
-          <img src="./mainpage/deco.png" alt="" class="deco1">
-          <img src="./mainpage/deco.png" alt="" class="deco2">
-          <img src="./mainpage/deco.png" alt="" class="deco3">
-        </div>
-      </div>
-      
-     <!-- ---- ----------商品列表----------------- -->
-      <div class="main3">
-        <h2>商品列表</h2>
-        <ul>
-          <li>
-            <img src="./mainpage/lemoncake.png" alt="">
-            <a href="./product1.html">塔派系列</a>
-          </li>
-          <li>
-            <img src="./mainpage/chocolatecake.png" alt="">
-            <a href="./product1.html">蛋糕系列</a>
-          </li>
-          <li>
-            <img src="./mainpage/strawberrycake.png" alt="">
-            <a href="./product1.html">季節限定</a>
-          </li>
-        </ul>
-      </div>
+
       <!-- --------ig組圖--------- -->
       <div class="main4">
-        <!-- <img src="./mainpage/ig.png" alt=""> -->
       </div>
 
 

@@ -1,9 +1,10 @@
 @import url(./reset.css);
+
 body{
     background-color: #FDF6F0;
     font-family: Microsoft JhengHei;
     font-size: 20px;
-    /* background-image: url(../mainpage/memphis-colorful.png); */
+    
 }
 *{
     box-sizing: border-box;
@@ -11,6 +12,7 @@ body{
 h2{
     font-size: 28px;
     color:#D57149;
+    text-shadow: 3px 3px 0px rgba(223, 187, 158, 0.445);
 }
 h3{
     font-size: 24px;
@@ -64,20 +66,20 @@ p{
     
 }
 .user{
-    width:40px;
+    /* width:40px;
     height:40px;
     background-color: #FFB085;
-    border-radius: 50%;
+    border-radius: 50%; */
 }
 .user img{
     width:30px;
     margin-left:5px;
 }
 .shop{
-    width:40px;
+    /* width:40px;
     height:40px;
     background-color: #FFB085;
-    border-radius: 50%;
+    border-radius: 50%; */
 }
 .shop img{
     width:30px;
@@ -115,7 +117,6 @@ p{
 /* ---------頁尾------------ */
 
 .footer{
-    /* padding: 30px; */
     background-color: #F0C3A7;
     display: flex;
     justify-content: space-between;
@@ -124,7 +125,7 @@ p{
 .footerimg{
     width:150px;  
     margin-left: 100px;
-    
+    padding: 10px;
 }
 .footer ul{
     display: flex;
@@ -142,10 +143,6 @@ p{
     color:#fff;
 }
 .line{
-    width:40px;
-    height:40px;
-    background-color: #FCD8D4;
-    border-radius: 50%;
 }
 .line img{
     width:30px;
@@ -153,10 +150,6 @@ p{
     margin-top:5px;
 }
 .ig{
-    width:40px;
-    height:40px;
-    background-color: #FCD8D4;
-    border-radius: 50%;
 }
 .ig img{
     width:30px;
@@ -164,10 +157,6 @@ p{
     margin-top:5px;
 }
 .mail{
-    width:40px;
-    height:40px;
-    background-color: #FCD8D4;
-    border-radius: 50%;
 }
 .mail img{
     width:30px;

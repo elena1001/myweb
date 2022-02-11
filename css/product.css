@@ -1,4 +1,5 @@
 main{
+   position: relative;
 }
 main>img{
    width:100%;
@@ -8,8 +9,8 @@ main>img{
 main p{
    text-align: center;
    font-weight: bolder;
-   text-shadow: #FFB085 2px 3px 3px;
    line-height: 50px;
+   margin-top: 50px;
 }
 main h2{
    text-align: center;
@@ -19,35 +20,34 @@ main h2{
 }
 .products_list{
    display: flex;
-   width:1200px;
+   width:1000px;
    margin:0 auto;
    background-color: #f5c6aac0;
+   position: relative;
 }
 .products_list ul{
    display: flex; 
    flex-direction: column;
+   justify-content: center;
 }
 .products_list img{
    width:50%;
    display: block;
 }
 .products_list img:hover{
-   transform-origin:0;
-   transform:scale(1.2,1);
+   width: 60%;
 }
-.products_list img:hover:nth-child(2){
-   transform-origin:(0);
-   transform:scale(1.2,1);
+.products_list img:hover+.products_list ul{
+
+   width: 20%;
 }
+
 .products_list li{      
    text-align: center;
    align-items: center;
    padding: 0 50px;
-   margin-top: 20px;
 }
-.products_list li:first-child{
-   padding-top: 100px;
-}
+
 .products_list h2{
    font-weight: bolder;
    text-shadow: #FFB085 2px 3px 3px;
@@ -55,6 +55,11 @@ main h2{
 .products_list a{
    display: block;
    text-decoration: none;
+}
+.products_list h2:hover{
+   color:#90AACB;
+    border-bottom: 5px dotted #F0C3A7;
+    text-shadow:none;
 }
 
 .products_list p{
