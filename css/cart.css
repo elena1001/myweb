@@ -53,9 +53,6 @@
      margin: 0 auto;
     
  }
-.main_cartmid{
-    
-}
 .main_cartmid ul{
     display:flex;
     width:800px;
@@ -83,11 +80,12 @@
     margin-top: 48px;
     color:#D57149;
     font-size: 16px;
+    border:none;
     padding:2px ;
-    border-color: #90AACB;
+    outline:1px solid #90AACB;
 }
-.amount_number input:hover{
-    border-color: #90AACB;
+.amount_number input:focus{
+    outline: 1px solid #90AACB;
 }
 .main_cartmid a{
     display: block;
@@ -95,6 +93,7 @@
 
 .main_cartmid i{
     margin-top:48px;
+    color: #D57149;
 }
 .main_cartmid i:hover{
     color:#90AACB;
@@ -106,35 +105,60 @@
     width: 30px;
     height:30px;
 }
-.main_cartbottom{}
+.main_cartbottom{
+    
+}
 .main_cartbottom ul{
     width:800px;
     background-color:rgba(255, 255, 255, 0.726);
     margin: 0 auto;
-    padding-left: 40px;
     border-top:2px dotted #FCD8D4;
-    /* overflow: hidden; */
+    margin-bottom: 10px;
+    
 }
 .main_cartbottom li{
     line-height: 1.6;
     margin-bottom: 5px;
-    padding-bottom: 5px;
-    border: 2px solid red;
-    /* float:right; */
+    padding:10px;
+    height: 50px;
+}
+.main_cartbottom h5{
+    margin: 0 auto;
+    text-align: center;
+}
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+.btn li{
+    margin-right: 10px;
+    
+}
+.btn input{
+    color:#fff;
+    background-color: #90AACB;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
 }
 
+.btn input:hover{
+    cursor: pointer;
+    background-color: #F0C3A7;
+}
 .downcart{
     padding-top: 50px;
 }
 
-.downcart_produ{}
 .downcart_produ h4{
     text-align: center;
-    background-color: #FCD8D4;
+    background-color: #f5e2e0d7;
     margin: 0 auto;
     width: 800px;
-    height:50px;
-    padding-top: 30px;
+    padding: 5px;
+    line-height: 40px;
 }
 .downcart_produ ul{
     display: flex;
@@ -144,15 +168,13 @@
     padding-left: 80px;
     padding-bottom: 50px;
     margin-bottom: 10px;
-    background-color: #FCD8D4;
+    background-color: rgba(255, 255, 255, 0.726);
 }
 .downcart_produ li{
-    
     margin-left: 30px;
 }
 .downcart_produ img{
     width:150px;
-    margin-bottom: ;
 }
 .downcart_produ p{
     margin-top: 20px;

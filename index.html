@@ -13,24 +13,68 @@
 </head>
 <body>
 <!-- -----導覽列----- -->
-  <header class="header">
-    <h1><a href="./index.html" ><img src="./header/logo.png" alt="" class="navimg"></img></a></h1>
-    <ul>
-        <li class="nav_a"><a href="./about.html" class="nav_a">品牌起源</a></li>
-        <li class="nav_a"><a href="./news1.html" >最新消息</a></li>
-        <li class="nav_a"><a href="./product.html" >商品列表</a>
-        <ol>
-            <li><a href="./product1.html">塔派系列</a></li>
-            <li><a href="./product2.html">蛋糕系列</a></li>
-            <li><a href="./product1.html">季節限定</a></li>
-        </ol>
-        </li>
-        <li class="nav_a"><a href="./faq.html">常見問題</a></li>
-        <li class="user"><a href="./login.html"><img src="./header/icon/user.png" alt="" ></a></li>
-        <li class="shop"><a href="./cart.html"><img src="./header/icon/shopping-cart.png" alt="" ></a></li>
-    </ul>
-  </header>   
+  <header>
+    <div class="header">
+      <h1><a href="./index.html" ><img src="./header/logo.png" alt="" class="navimg"></img></a></h1>
+      <ul>
+          <li class="nav_a"><a href="./about.html" class="nav_a">品牌起源</a></li>
+          <li class="nav_a"><a href="./news1.html" >最新消息</a></li>
+          <li class="nav_a"><a href="./product.html" >商品列表</a>
+          <ol>
+              <li><a href="./product1.html">塔派系列</a></li>
+              <li><a href="./product2.html">蛋糕系列</a></li>
+              <li><a href="./product3.html">季節限定</a></li>
+          </ol>
+          </li>
+          <li class="nav_a"><a href="./faq.html">常見問題</a></li>
+          <li class="user"><a href="./login.html"><i class="fas fa-user"></i></a></li>
+          <li class="shop">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <span>1</span>
+          </li>
+      </ul> 
+    </div>
+    <!-- ------浮動購物車-------- -->
+    <div class="float_cart">
+      <ul class="float_cartmain">
+          <li>
+              <img src="./product/products1.png" alt="">
+          </li>
+          <li>
+              <h5>草莓乳酪塔</h5>
+          </li>
+          <li>
+              <h5> 1x NT$750</h5>
+          </li>
+          <li>
+              <a href="#"><i class="fas fa-trash-alt"></i></a>
+          </li>
+      </ul> 
+      <div class="to_cart">
+        <a href="./cart.html">前往購物車</a>
+      </div>
+    </div>  
+    <!-- ------漢堡導覽列------  -->
+     <div class="header_button">
+      <a href="">
+        <div class="header_button_bg"></div>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+  </header>
+  <!-- ------旁邊社群紐------ -->
+  <div class="right_social">
+    <a href=""><i class="fab fa-instagram"></i></a>
+    <a href=""><i class="fab fa-facebook-square"></i></a>
+  </div>
 
+  <!-- -------loading------- -->
+  <div class="loading">
+    <img src="./header/logo.png" alt="">
+  </div>
+  
 <!-- -------主頁大畫面------ -->
   <div class="banner">
     <video src="./mainpage/cake.mp4" autoplay muted loop></video>
@@ -40,26 +84,27 @@
  
 
   <!-- -------品牌起源----------- -->
-  <div class="index_about">
-    <img src="./mainpage/index_about.png" alt="">
-    <div class="index_aboutri">
-      <h2>品牌起源</h2>
-      <p>Lizi’s cake house 創立於西元2021年10月1日，創辦人認為世界上沒有甚麼困難的事跟過不去的坎，如果有，那就吃甜點吧。</p>
+  <main>
+    <div class="index_about">
+      <img src="./mainpage/index_about.png" alt="">
+      <div class="index_aboutri">
+        <h2>品牌起源</h2>
+        <p>Lizi’s cake house 創立於西元2021年10月1日，創辦人認為世界上沒有甚麼困難的事跟過不去的坎，如果有，那就吃甜點吧。</p>
+      </div>
     </div>
-  </div>
 
   <!-- ---------最新消息---------- -->
 
-  <div class="index_news">
-    <a href="./news1.html"><h2>News</h2></a>
-  </div>
+    <div class="index_news">
+      <a href="./news1.html"><h2>News</h2></a>
+    </div>
 
    <!-- ---- ----------商品列表----------------- -->
    <div class="main3">
       <h2>商品列表</h2>
       <ul>
         <li>
-          <img src="./product1/product2.png" alt="">
+          <img src="./mainpage/cake1.png" alt="">
           <a href="./product1.html">塔派系列</a>
         </li>
         <li>
@@ -67,64 +112,59 @@
           <a href="./product2.html">蛋糕系列</a>
         </li>
         <li>
-          <img src="./mainpage/cake.png" alt="">
+          <img src="./mainpage/cake2.png" alt="">
           <a href="./product3.html">季節限定</a>
         </li>
       </ul>
     </div>
- <!-- -----------商品輪播---------------- -->
-      <main>
-        <div class="product_carousel">
-          <ul>
-            <li><img src="./product1/product3.png" alt=""></li>
-            <li><img src="./product1/product4.png" alt=""></li>
-            <li><img src="./product1/product5.png" alt=""></li>
-            <li><img src="./product1/product3.png" alt=""></li>
-            <li><img src="./product1/product4.png" alt=""></li>
-            <li><img src="./product1/product5.png" alt=""></li>
-          </ul>
-        </div>
-      </main>
-
+    <!-- -----------商品輪播---------------- -->
+    <div class="product_carousel">
+      <ul>
+        <li><img src="./product1/product3.png" alt=""></li>
+        <li><img src="./product1/product4.png" alt=""></li>
+        <li><img src="./product1/product5.png" alt=""></li>
+        <li><img src="./product1/product3.png" alt=""></li>
+        <li><img src="./product1/product4.png" alt=""></li>
+        <li><img src="./product1/product5.png" alt=""></li>
+      </ul>
+    </div>
 
       <!-- --------ig組圖--------- -->
       <div class="main4">
-      </div>
-
+      </div>      
+  </main>
+    
 
      <!-- ----------頁尾------------- -->
-
-     <footer class="footer">
-      <h1><a href="./index.html" ><img src="./header/logo.png" alt="" class="footerimg"></a></h1>
+  <footer class="footer">
+    <h1><a href="./index.html" ><img src="./header/logo.png" alt="" class="footerimg"></a></h1>
  
-        <ul>
-         <li>
-           <a href="./about.html" >品牌起源</a>
-         </li>
-         <li>
-           <a href="./news1.html" >最新消息</a>
-         </li>
-         <li>
-           <a href="./product.html" >商品列表</a>
-         </li>
-         <li>
-           <a href="#" >聯絡我們</a>
-         </li>
-         <li>
-           <a href="./faq.html" >常見問題</a>
-         </li>
-         <li class="line">
-           <a href="#"><img src="./icon_all/line.png" alt="" ></a>
-         </li>
-         <li class="ig">
-           <a href="#"><img src="./icon_all/instagram.png" alt="" ></a>
-         </li>
-         <li class="mail">
-           <a href="#"><img src="./icon_all/email.png" alt="" ></a>
-         </li>
-        </ul> 
-      </footer>
-     
-<!-- ----註解---- -->
+    <ul>
+      <li>
+        <a href="./about.html" >品牌起源</a>
+      </li>
+      <li>
+        <a href="./news1.html" >最新消息</a>
+      </li>
+      <li>
+        <a href="./product.html" >商品列表</a>
+      </li>
+      <li>
+        <a href="#" >聯絡我們</a>
+      </li>
+      <li>
+        <a href="./faq.html" >常見問題</a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-line"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </li>
+    </ul> 
+  </footer>
 </body>
 </html>

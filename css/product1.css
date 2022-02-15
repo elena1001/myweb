@@ -1,6 +1,5 @@
 main{
     display:flex;
-    margin-top: 50px;
 }
 aside{
     width:200px;
@@ -8,6 +7,7 @@ aside{
 }
 aside ul{
     padding-top: 50px;
+    
 }
 aside li{
     text-align: center;
@@ -40,6 +40,7 @@ aside a:hover{
 }
 .products_top h2{
     float:left;
+    margin-top: 50px;
     padding:20px;
     padding-left: 60px;
     font-weight: bolder;

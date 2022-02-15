@@ -13,6 +13,9 @@
     padding-top: 50px;
     
 }
+.login_ri input:hover{
+    cursor: pointer;
+}
 .login_right{
     cursor: pointer;
 }
@@ -48,21 +51,14 @@
 }
 .login_ri_mid{
     display: flex;
-    width:500px;
     margin: 0 auto;
 }
-.login_ri_mid ul{
-    
-}
-.login_ri_mid li{
-    justify-content: center;
-   margin-left: 20px;
-   margin-top: 30px;
-}
+
 .login_ri_dw{
-    width:200px;
     margin: 0 auto; 
+
 }
+
 .login_ri_dw ul{
     
 }
@@ -72,10 +68,10 @@
 }
 .login_ri_dw img{
     width: 80px;
-    margin-left: 70px;
-    margin-top: 70px;
+    display: block;
+    margin:  50px auto;
 }
-.signupbtn{
+/* .signupbtn{
     width: 200px;
     display: block;
     border-radius: 5px;
@@ -96,8 +92,8 @@
     line-height: 4;
     font-weight: bold;
     font-size: 14px;
-}
-.forgotbtn{
+} */
+/* .forgotbtn{
     width: 200px;
     display: block;
     border-radius: 5px;
@@ -107,4 +103,4 @@
     line-height: 4;
     font-weight: bold;
     font-size: 14px;
-}
+} */
