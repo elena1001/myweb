@@ -2,7 +2,7 @@
 
 body{
     background-color: #FDF6F0;
-    font-family: Microsoft JhengHei;
+    font-family: 'Microsoft JhengHei','sans-serif';
     font-size: 20px;
 }
 *{
@@ -38,6 +38,7 @@ p{
     justify-content: space-between;
     position: relative;
 }
+
 .navimg{
     padding-left: 100px;
     width:220px;
@@ -51,39 +52,49 @@ p{
     display:flex;
     text-decoration: none;
     position: relative;
+    height:100%;
 }
 .header li{
     width:100px;
-    line-height: 80px;
+    height: 100%;
+    border:2px solid red;
+    margin:0 auto;
 }
 .header a{
     display: block;
     text-decoration: none;
     color:#D57149;
     font-size: 18px;
-    text-align: center;
-   height:60px;
+    display: flex;
+    align-items: center;
+    width:100%;
+    height:100%;
+
+}
+.user {
+   margin: 0 auto;
 }
 .user i{
     font-size: 30px;
     color:#f09963;
-    margin-left: 50px;
+    margin:0 auto;
 }
 .shop i{
     font-size:30px;
     color:#f09963;
-    margin-right: 30px;
 }
-.user i:hover{
+.user hover:i{
     color:#7e9fca;
 }
-.shop i:hover {
+
+.shop hover:i {
     color:#7e9fca;
-    
 }
-.shop a:hover + .float_cart{
+
+.shop:hover .float_cart {
     display: block;
 }
+
 .shop span{
     position: absolute;
     z-index: 5;
@@ -100,9 +111,10 @@ p{
 }
 .nav_a>a:hover{
     color:#90AACB;
-    border-bottom: 5px dotted #f09963;
 }
 
+
+/* ------旁邊社群紐------ */
 .right_social{
     position: fixed;
     right: 20px;
@@ -151,8 +163,8 @@ p{
 
 .float_cart{
     position: absolute;
-    right:40px;
-    top:68px;
+    right:0px;
+    top:60px;
     z-index: 2;
     display:none;
 }
