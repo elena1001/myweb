@@ -6,8 +6,9 @@
 
 .banner{
     position: relative;
-    max-width:1600px;
-    height: 600px;
+    min-width:1600px;
+    /* height: 600px; */
+    min-height:100vh;
   }
   .banner video{
     position: absolute;

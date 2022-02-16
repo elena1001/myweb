@@ -77,13 +77,16 @@ p{
 .user i:hover{
     color:#7e9fca;
 }
-.shop i:hover{
+.shop i:hover {
     color:#7e9fca;
+    
+}
+.shop a:hover + .float_cart{
+    display: block;
 }
 .shop span{
     position: absolute;
     z-index: 5;
-    display: none;
     font-size: 12px;
     width: 18px;
     height: 18px;
@@ -145,26 +148,27 @@ p{
   }
 
   /* -----浮動購物車--------- */
+
 .float_cart{
     position: absolute;
     right:40px;
     top:68px;
     z-index: 2;
-    /* display:none; */
+    display:none;
 }
 .float_cart ul{
     display:flex;
     width: 400px;
-    background-color: rgba(255, 255, 255, 0.973);
+    border: 2px solid blue;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-top: 5px;
+    background-color: rgba(255, 255, 255, 0.973);
 }
 .float_cart li{
-    height:100px;
+    margin: 10px auto;
+    
 }
 .float_cart img{
-    width:100px;
+    width:100%;
 }
 .float_cart h5{
     text-align: center;
@@ -172,7 +176,7 @@ p{
     font-size: 16px;
 }
 .float_cart i{
-    line-height: 100px;
+    font-size: 20px;
     color:#D57149;
 }
 .float_cart i:hover{
@@ -180,18 +184,67 @@ p{
 }
 .to_cart a{
     text-decoration: none;
+    width:100%;
     color:#fff;
     display: block;
     margin: 0 auto;
     background-color: #90AACB;
     text-align: center;
     font-size: 16px;
-    padding: 20px;
+    border:2px solid red;
 }
 .to_cart a:hover{
     background-color: #F0C3A7;
 }
-/* ------導覽列2--------- */
+/* -----漢堡--------- */
+
+.hamburger{
+    display: flex; 
+    width:100%; 
+    height:100%;
+    position: absolute; 
+    left: 0;
+    top:0;
+    z-index: 99;
+    display: none;
+}
+.hamburger img{
+    width: 50%;  
+}
+.hamburger_ri{
+    background-color: #F0C3A7;
+    width: 50%; 
+    border:2px solid green;
+}
+.hamburger_ri ul{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    border: 2px solid blue;
+}
+.hamburger_ri li{
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.hamburger_ri a{
+    text-decoration: none;
+    color: #D57149;
+    font-size: 24px;
+    border: 2px solid red;
+}
+.hamburger_ri img{
+    width: 100px;
+    display: block;
+    margin:  50px auto;
+}
+.ham_dw i{
+    color:#e0835e;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+
+
 
 .header_button{  
 }
@@ -251,7 +304,10 @@ p{
     padding-right: 50px;
 }
 .footer li{
-    margin-left:20px;
+    width:80px;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 10px;
 }
 .footer a{
     text-decoration: none;
@@ -259,8 +315,10 @@ p{
     font-size: 16px;
     color:#fff;
 }
+.footer a:hover{
+    color:#90AACB;
+}
 .footer i{
-    margin-left: 10px;
     font-size: 30px;
     color: #e0835e;
 }
@@ -268,3 +326,4 @@ p{
 .footer i:hover{
     color:#90AACB;
 }
+

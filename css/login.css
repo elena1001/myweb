@@ -15,12 +15,10 @@
 }
 .login_ri input:hover{
     cursor: pointer;
+    
 }
 .login_right{
     cursor: pointer;
-}
-.login_ri_top{
- 
 }
 .login_ri_top a{
     display: block;
@@ -49,58 +47,12 @@
     font-size: 14px;
     padding: 10px;
 }
-.login_ri_mid{
-    display: flex;
-    margin: 0 auto;
-}
 
-.login_ri_dw{
-    margin: 0 auto; 
-
-}
-
-.login_ri_dw ul{
-    
-}
 .login_ri_dw li{
     margin-top: 50px;
-    
 }
-.login_ri_dw img{
+.login_ri_top img{
     width: 80px;
     display: block;
     margin:  50px auto;
 }
-/* .signupbtn{
-    width: 200px;
-    display: block;
-    border-radius: 5px;
-    background-color: #F3EEEC;
-    color: #D57149;
-    border: none;
-    line-height: 4;
-    font-weight: bold;
-    font-size: 14px;
-}
-.loginbtn{
-    width: 200px;
-    display: block;
-    border-radius: 5px;
-    background-color: #F3EEEC;
-    color: #D57149;
-    border: none;
-    line-height: 4;
-    font-weight: bold;
-    font-size: 14px;
-} */
-/* .forgotbtn{
-    width: 200px;
-    display: block;
-    border-radius: 5px;
-    background-color: #F3EEEC;
-    color: #D57149;
-    border: none;
-    line-height: 4;
-    font-weight: bold;
-    font-size: 14px;
-} */
