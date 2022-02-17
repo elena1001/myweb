@@ -31,12 +31,20 @@ p{
 }
 
 /* --------主選單---------- */
+header{
+    position: sticky;
+    position:-webkit-sticky;
+    top:0;
+    z-index: 999;
+    width:100%;
+}
 .header{
     height:80px;
+    position: relative;
     background-color: #f0c9b2;
     display:flex;
     justify-content: space-between;
-    position: relative;
+    
 }
 
 .navimg{
@@ -57,28 +65,26 @@ p{
 .header li{
     width:100px;
     height: 100%;
-    border:2px solid red;
     margin:0 auto;
+
 }
 .header a{
-    display: block;
     text-decoration: none;
     color:#D57149;
     font-size: 18px;
     display: flex;
     align-items: center;
+    justify-content: center;
     width:100%;
     height:100%;
-
 }
-.user {
-   margin: 0 auto;
+.user{
 }
 .user i{
     font-size: 30px;
     color:#f09963;
-    margin:0 auto;
 }
+
 .shop i{
     font-size:30px;
     color:#f09963;
@@ -120,6 +126,8 @@ p{
     right: 20px;
     bottom:100px;
     width: 50px; 
+    z-index: 1;
+    
 }
 .right_social a{
     display: block;
@@ -165,29 +173,33 @@ p{
     position: absolute;
     right:0px;
     top:60px;
-    z-index: 2;
+    z-index: 9;
     display:none;
 }
 .float_cart ul{
     display:flex;
     width: 400px;
-    border: 2px solid blue;
+    height: 100px;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.973);
+    padding: 10px 0 10px 10px;
 }
 .float_cart li{
-    margin: 10px auto;
-    
+    flex-grow: 1;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 80px;
 }
 .float_cart img{
     width:100%;
+    height: 100%;
 }
 .float_cart h5{
     text-align: center;
-    line-height: 100px;
     font-size: 16px;
 }
 .float_cart i{
+    margin: 0 auto;
     font-size: 20px;
     color:#D57149;
 }
@@ -197,13 +209,13 @@ p{
 .to_cart a{
     text-decoration: none;
     width:100%;
+    line-height: 40px;
     color:#fff;
     display: block;
     margin: 0 auto;
     background-color: #90AACB;
     text-align: center;
     font-size: 16px;
-    border:2px solid red;
 }
 .to_cart a:hover{
     background-color: #F0C3A7;
