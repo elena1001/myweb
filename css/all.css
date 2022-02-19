@@ -112,7 +112,7 @@ header{
     background-color: #e0835e;
     border-radius: 10px;
     color: white;
-    right: 40px;
+    right:24px;
     top: 14px;
 }
 .nav_a>a:hover{
@@ -223,48 +223,46 @@ header{
 /* -----漢堡--------- */
 
 .hamburger{
-    display: flex; 
-    width:100%; 
-    height:100%;
+    min-width: 100%;
+    height: 100vh;
     position: absolute; 
     left: 0;
     top:0;
     z-index: 99;
-    display: none;
+    /* display: none; */
 }
-.hamburger img{
-    width: 50%;  
-}
-.hamburger_ri{
+
+.hamburger{
     background-color: #F0C3A7;
     width: 50%; 
     border:2px solid green;
 }
-.hamburger_ri ul{
+.hamburger ul{
     display: flex;
     flex-direction: column;
     height:100%;
     border: 2px solid blue;
 }
-.hamburger_ri li{
+.hamburger li{
     margin: 0 auto;
     margin-top: 30px;
 }
-.hamburger_ri a{
+.hamburger a{
     text-decoration: none;
     color: #D57149;
     font-size: 24px;
     border: 2px solid red;
 }
-.hamburger_ri img{
+.hamburger img{
     width: 100px;
     display: block;
     margin:  50px auto;
 }
-.ham_dw i{
+.hamburger i{
     color:#e0835e;
     font-size: 30px;
-    margin-right: 20px;
+    margin: 0 auto;
+    /* margin-right: 20px; */
 }
 
 
