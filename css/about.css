@@ -1,9 +1,7 @@
-.banner_about{
 
-}
 .banner_about img{
   width:100%;
-  min-height:100vh;
+  display: block;
 }
 
 .background_about{
@@ -16,12 +14,14 @@
   opacity: 50%;
 }
 .background_about img{
-  min-height: 100%;
   width: 100%;
+  min-height: 100%;
+  display: block;
 }
 .main_about{
   position: relative;
   margin-top: 50px;
+  border:2px solid red;
 }
 .main_about> p{
   text-align: center;

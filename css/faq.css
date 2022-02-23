@@ -21,7 +21,7 @@
 
 .faq_container ul{
     display: flex;
-    width:1000px;
+    width:70%;
     margin: 0 auto;
 }
 .faq_container li{
@@ -31,6 +31,7 @@
     width: 80px;
     display: block;
     margin-left: 20px;
+
 }
 .faq_container a{
     display: block;
@@ -38,6 +39,7 @@
     text-align: center;
     text-decoration: none;
     color:#D57149;
+    font-weight: bolder;
     font-size: 20px;
 }   
 .faq_container a:hover{
@@ -57,11 +59,14 @@
     margin-top: 50px;  
 }
 .main_faq ul{
+    width:100%;
     padding-top: 10px;
     padding-bottom: 100px;
+    
 }
 .main_faq li{
     display: flex;
+    width:100%;
     padding: 30px;
     margin-top: 50px;
     background-color: rgba(255, 255, 255, 0.678);
@@ -79,7 +84,79 @@
     line-height: 1.6;
 }
 .main_faqin p{
-    font-size: 20px;
+    font-size: 18px;
     color: #6688b4;
     line-height: 1.6;
 }
+
+@media(max-width: 575.98px){
+    .banner_faq h2{
+       font-size: 24px;
+    }
+    .banner_faq{
+        width:100%;
+    }
+    .faq_container ul{
+        width:400px;
+    }
+    .faq_container img{
+        width:70px;
+    }
+    .faq_container a{
+        font-size: 18px;
+    } 
+    .main_faq{
+        width:400px;
+    }
+    .main_faq h3{
+        font-size: 20px;
+    }
+    .main_faqin h4{
+        font-size: 18px;
+    }
+    .main_faqin p{
+        font-size: 16px;
+    }
+}
+
+  
+  @media screen and (min-width: 576px) and (max-width: 767.98px){
+    .banner_faq h2{
+       font-size: 26px;
+    }
+    .faq_container img{
+        width:70px;
+    }
+    .faq_container a{
+        font-size: 18px;
+    } 
+    .main_faq{
+        width: 550px;
+    }
+  }
+  
+  @media screen and (min-width:768px) and (max-width:991.98px){
+    .faq_container img{
+        width:80px;
+    }
+    .faq_container a{
+        font-size: 18px;
+    } 
+    .main_faq{
+        width: 700px;
+    }
+  }
+  
+  @media screen and (min-width:992px) and (max-width:1199.98px){
+    .main_faq{
+        width: 800px;
+    }
+  }
+  
+  @media screen and (min-width:1200px) and (max-width:1399.98px){
+
+  }
+  
+  @media screen and (min-width:1400px){
+ 
+  }

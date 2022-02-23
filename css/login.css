@@ -55,4 +55,34 @@
     width: 80px;
     display: block;
     margin:  50px auto;
+   
 }
+
+@media (max-width : 575.98px){
+    .wrapper_login{
+      display: flex;  
+      flex-direction: column;
+      
+    }
+    .wrapper_login > img{
+        display: none;
+    }
+    .login_ri{
+        width:100%;
+        height:100%;
+        background-image: url(../login/login_2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .login_ri_top a{
+        width:250px;
+     }
+     .login_ri_top input{
+        width:250px;
+     }
+
+   }

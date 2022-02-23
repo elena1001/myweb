@@ -5,9 +5,8 @@
 
 .banner{
     position: relative;
-    min-width:1600px;
-    /* height: 600px; */
-    min-height:100vh;
+    width:100%;
+    height:700px;
   }
   .banner video{
     position: absolute;
@@ -25,7 +24,7 @@
     height: 100%;
     font-size: 50px;
     text-align: center;
-    line-height:600px;
+    line-height:700px;
     font-family:Papyrus;
     font-weight: bold;
     text-transform:uppercase;
@@ -34,7 +33,7 @@
 /* --------主頁品牌起源------------ */
 .index_about{
     display: flex;
-    max-width: 1000px;
+    width: 1000px;
     margin: 50px auto;
     position: relative;
 }
@@ -78,13 +77,14 @@
     margin-top: 30px;
 }
 
- /* -----------商品輪播----------------  */
+/* -------最新消息----------- */
 .index_news{
     width:1200px;
     height: 500px;
     margin: 0 auto;
     background-image: url(../mainpage/index_news.png);
     background-size: cover;
+    background-position: center;
 }
 .index_news h2{
     color:rgb(255, 255, 255);
@@ -99,31 +99,9 @@
     text-decoration: none;
 }
 
-.product_carousel{
-    width: 1200px;
-    height: 200px;
-    margin: 0 auto;
-    margin-top: 100px;
-}
-.product_carousel ul{
-    display: flex; 
-}
-
-.product_carousel ul:hover{
-
-}
-.product_carousel li{
-   width:400px;
-   margin-left: 20px;
-}
-.product_carousel img{
-    width:100%;
-    display: block;
-}
 /* --------主頁商品列表----------- */
 .main3{
     width: 100%;
-    
 }
 .main3 h2{
     text-align: center;
@@ -133,11 +111,9 @@
 }
 .main3 ul{
     display: flex;
-    margin-top:150px;
     width:1200px;
+    height:400px;
     margin: 0 auto;
-    padding-top: 70px;
-    
 }
 .main3 li{
    margin:80px auto;
@@ -161,11 +137,227 @@
 .main3 a:hover{
     color:#90AACB;
 }
+ /* -----------商品輪播----------------  */
 
+.product_carousel{
+    width: 100%;
+    height:100%;
+    margin: 50px auto;
+}
+.product_carousel ul{
+    display: flex; 
+}
+
+.product_carousel li{
+   
+   padding: 10px;
+}
+.product_carousel img{
+    width:100%;
+    display: block;
+}
 /* -------主頁ig組圖-------------- */
 .main4 {
     margin-top: 100px;
     height:500px;
     background-image: url(../mainpage/ig.png);
-    background-size: cover;
+    background-size: 100% 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
+
+
+/* ------RWD--------- */
+@media screen and (max-width: 575.98px){
+    .banner{
+        height:400px;
+    }
+    .banner h2{
+        font-size: 30px;
+        line-height: 400px;
+    }
+    .index_about{
+        width: 400px;
+    }
+    .index_aboutri h2::before{
+        width: 99px;
+        height: 125px;
+        top: 15px;
+        left: -146px;
+    }
+    .index_about img{
+        width:40%;
+        margin-right: 30px;
+        padding: 30px;
+    }
+    .index_aboutri h2{
+        font-size: 24px;
+    }
+    .index_aboutri p{
+       font-size: 14px;
+    }
+    .index_news{
+        width:400px;
+        height: 300px;
+    }
+    .index_news h2{
+        font-size: 50px;
+        line-height: 300px;
+    }
+    .product_carousel{
+        margin: 10px 0 ;
+
+    }
+    .main3 ul{
+        width:400px;
+        height:300px;
+    }
+    .main3 h2{
+        font-size: 24px;
+    }
+    .main3 img{
+        width:120px; 
+    }
+    .main4 {
+        margin-top: 0;
+        height:300px;
+        background-size: 100% 80%;
+    }
+  }
+  
+  @media screen and (min-width: 576px) and (max-width: 767.98px){
+    .banner{
+        height:550px;
+    }
+    .banner h2{
+        font-size: 40px;
+        line-height:500px;
+    }
+    .index_about{
+        width: 500px;
+    }
+    .index_aboutri h2::before{
+        width: 145px;
+        height: 180px;
+        top: 25px;
+        left: -217px;
+    }
+    .index_about img{
+        width:50%;
+        margin-right: 50px;
+        padding: 50px;
+    }
+    .index_aboutri h2{
+        font-size: 24px;
+    }
+    .index_aboutri p{
+       font-size: 14px;
+    }
+    .index_news{
+        width:500px;
+        height:300px;
+    }
+    .index_news h2{
+        font-size: 60px;
+        line-height: 300px;
+    }
+    .main3 ul{
+        width:550px;
+        height:300px;
+    }
+    .main3 h2{
+        font-size: 24px;
+    }
+    .main3 img{
+        width:150px; 
+    }
+    .main4 {
+        margin-top: 0;
+        height:300px;
+        background-size: 100% 90%;
+    }
+  }
+  
+  @media screen and (min-width:768px) and (max-width:991.98px){
+    .banner{
+        height:630px;
+    }
+    .banner h2{
+        line-height:630px;
+    }
+    .index_about{
+        width: 750px;
+    }
+    .index_aboutri h2::before{
+        width: 209px;
+        height: 262px;
+        top: 69px;
+        left: -370px;
+    }
+    .index_about img{
+        width:50%;
+    }
+    .index_news{
+        width:750px;
+        height: 350px;
+    }
+    .index_news h2{
+        font-size: 80px;
+        line-height: 350px;
+    }
+    .main3 ul{
+        width:700px;
+    }
+    .main3 img{
+        width:180px; 
+    }
+    .main4 {
+        margin-top: 0;
+        background-size: 100% 90%;
+    }
+  }
+  
+  @media screen and (min-width:992px) and (max-width:1199.98px){
+    .banner{
+        height:650px;
+      }
+      .banner h2{
+        line-height:650px;
+    }
+    .index_about{
+        width: 900px;
+    }
+    .index_about img{
+        width:30%;
+    }
+    .index_news{
+        width:900px;
+        height: 400px;
+    }
+    .index_news h2{
+        line-height: 400px;
+    }
+    .product_carousel{
+        margin-top:70px;
+    }
+    .main3 ul{
+        width:900px;
+    }
+    .main4 {
+        margin-top: 0;
+        background-size: 100% 90%;
+    }
+  }
+  
+  @media screen and (min-width:1200px) and (max-width:1399.98px){
+    .index_news{
+        width:1000px;
+    }
+    .main3 ul{
+        width:1000px;
+    }
+  }
+  
+  @media screen and (min-width:1400px){
+  
+  }
