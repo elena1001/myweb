@@ -170,34 +170,36 @@
 /* ------RWD--------- */
 @media screen and (max-width: 575.98px){
     .banner{
-        height:400px;
+        height:320px;
     }
     .banner h2{
         font-size: 30px;
-        line-height: 400px;
+        line-height: 320px;
     }
     .index_about{
-        width: 400px;
+        width: 320px;
     }
     .index_aboutri h2::before{
-        width: 99px;
-        height: 125px;
+        width: 89px;
+        height: 109px;
         top: 15px;
-        left: -146px;
+        left: -133px;
     }
     .index_about img{
-        width:40%;
+        width:45%;
         margin-right: 30px;
         padding: 30px;
     }
     .index_aboutri h2{
-        font-size: 24px;
+        font-size: 18px;
     }
     .index_aboutri p{
-       font-size: 14px;
+       font-size: 12px;
+       width: 100%;
+       padding-right: 10px;
     }
     .index_news{
-        width:400px;
+        width:320px;
         height: 300px;
     }
     .index_news h2{
@@ -209,14 +211,17 @@
 
     }
     .main3 ul{
-        width:400px;
+        width:320px;
         height:300px;
     }
     .main3 h2{
-        font-size: 24px;
+        font-size: 20px;
     }
     .main3 img{
-        width:120px; 
+        width:80px; 
+    }
+    .main3 a{
+        font-size: 16px;
     }
     .main4 {
         margin-top: 0;
