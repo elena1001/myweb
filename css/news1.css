@@ -125,19 +125,23 @@ nav a:hover{
 
 @media screen and (max-width: 575.98px){
     .news_title h2:before{
-        left: 32%;
+        left: 28%;
     }
     .news_title h2{
-        font-size: 24px;
+        font-size: 20px;
+    }
+    .news_title p{
+        font-size: 14px;
     }
     nav{
-        width: 400px;
+        width: 320px;
+        padding: 0 10px;
     }
     nav a{
-        font-size: 16px;
+        font-size: 14px;
     }
     .news_list{
-        width:400px;
+        width:320px;
     }
     .news_post{
         width:180px;
