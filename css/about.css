@@ -19,9 +19,10 @@
   display: block;
 }
 .main_about{
+  width:1200px;
+  margin: 0 auto;
   position: relative;
   margin-top: 50px;
-  border:2px solid red;
 }
 .main_about> p{
   text-align: center;
@@ -72,7 +73,9 @@
   margin-bottom: 50px;
 }
 .main_about li img{
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
 }
 .about_move img:hover{
   border-radius: 50%;
@@ -110,6 +113,7 @@
 }
 
 .main_about li p{
+  margin:0 auto;
   margin-bottom: 50px;
   margin-top: 20px;
   padding: 10px;
@@ -119,4 +123,79 @@
   color: #d87a55;
   background-color: #f3ccb6a8;
   font-size: 18px;
+}
+
+@media screen and (max-width: 575.98px){
+  .main_about{
+    width:320px;
+  }
+  .main_about li{
+    width: 150px;
+  }
+  .main_about li img{
+    width:60%;
+  }
+  .main_about h2{
+    font-size: 20px;
+  }
+  .main_about>p{
+    font-size: 14px;
+  }
+  .main_about li p{
+    width:130px;
+    font-size: 12px;
+  }
+  .movecake img{
+    width:80px;
+    margin-left: 60px;
+ }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px){
+  .main_about{
+    width:550px;
+  }
+  .main_about li img{
+    width: 65%;
+  }
+  .main_about li p{
+    width:80%;
+    font-size: 16px;
+  }
+  .movecake img{
+    width:130px;
+    margin-left: 35px;
+ }
+}
+
+@media screen and (min-width:768px) and (max-width:991.98px){
+  .main_about{
+    width:750px;
+  }
+  .main_about li img{
+    width: 80%;
+  }
+  .main_about li p{
+    font-size: 16px;
+  }
+  .movecake img{
+     width:180px;
+     margin-left: 15px;
+  }
+}
+
+@media screen and (min-width:992px) and (max-width:1199.98px){
+  .main_about{
+    width:900px;
+  }
+}
+
+@media screen and (min-width:1200px) and (max-width:1399.98px){
+  .main_about{
+    width:1000px;
+  }
+}
+
+@media screen and (min-width:1400px){
+
 }

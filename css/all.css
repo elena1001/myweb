@@ -415,6 +415,15 @@ header{
         width: 100%;
         display: flex;
     }
+    .nav_ham img{
+        width: 100px;
+        margin: 5px auto;
+        transform: translateX(27px);
+
+    }
+    .hamburger_icon{
+        margin: 10px 10px 10px 0;   
+    }
     .header{
         display: none;
     }
@@ -431,15 +440,17 @@ header{
         
     }
     .footerimg{
-        width:120px;
+        width:100px;
         margin-top: 20px;
         margin-left: 0;
         
     }
     .footer li{
-        width:70px;
-        line-height: 70px;
-       
+        width:60px;
+        line-height: 60px;
+    }
+    .footer a{
+        font-size: 14px;
     }
  
        
