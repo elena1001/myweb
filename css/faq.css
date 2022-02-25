@@ -11,9 +11,18 @@
     min-height: 100%;
     width: 100%;
   }
+  .banner_faq{
+    margin-top: 50px;
+    text-align: center;
+  }
  .banner_faq h2{
-     margin-top: 50px;
-     text-align: center;
+     font-weight: bolder;
+     text-shadow: 3px 3px 0px rgba(223, 187, 158, 0.445);
+ }
+ .banner_faq p{
+    font-weight: bolder;
+    text-shadow: 3px 3px 0px rgba(223, 187, 158, 0.445);
+    line-height: 2;
  }
 .faq_container{
     margin-top: 50px;
@@ -91,31 +100,33 @@
 
 @media(max-width: 575.98px){
     .banner_faq h2{
-       font-size: 24px;
+       font-size: 20px;
     }
     .banner_faq{
         width:100%;
     }
     .faq_container ul{
-        width:400px;
+        width:320px;
+        border:2px solid red;
     }
     .faq_container img{
-        width:70px;
+        width:60px;
+        margin-left: 12px;
     }
     .faq_container a{
-        font-size: 18px;
+        font-size: 14px;
     } 
     .main_faq{
-        width:400px;
+        width:320px;
     }
     .main_faq h3{
-        font-size: 20px;
-    }
-    .main_faqin h4{
         font-size: 18px;
     }
-    .main_faqin p{
+    .main_faqin h4{
         font-size: 16px;
+    }
+    .main_faqin p{
+        font-size: 14px;
     }
 }
 
