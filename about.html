@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about.html</title>
+    <title>關於我們-Lizi's cake house</title>
     <link rel="icon" href="./header/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/about.css">
 </head>
@@ -89,23 +90,23 @@
     <div class="background_about">
         <img src="./about/about1.png" alt="" >
     </div>
-    <div class="main_about">
+    <div class="main_about" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
       <p>about us</p>
       <h2>品牌起源</h2>
       <div class="mid_about">
-          <div class="movecake"><img src="./about/movecake.png" alt=""></div>
+          <div class="movecake"><img src="./about/movecake.png" alt="" ></div>
           <div class="blueline"><img src="./about/blueline.png" alt="" ></div>
       </div>
       <ul class="about_move">
-          <li class="about1">
+          <li class="about1" data-aos="zoom-in-left" data-aos-duration="2000" >
               <img src="./about/hand.png" alt="">
               <p>Lizi’s cake house 創立於西元2021年10月1日，創辦人從小就愛好製作甜點及品嘗甜點。創辦人認為世界上沒有甚麼困難的事跟過不去的坎，如果有那就吃甜點吧。</p>
           </li>
-          <li class="about2">
-              <img src="./about/makecake.png" alt="">
+          <li class="about2" data-aos="zoom-in-right" data-aos-duration="2000">
+              <img src="./about/makecake.png" alt="" >
               <p>為了讓大家都能品嘗到最美味的甜點，並推廣。創辦人遠赴法國學藝，學成三年後，回台開了這一家Lizi’s cake house。</p>
           </li>
-          <li class="about3">
+          <li class="about3" data-aos="zoom-in-left" data-aos-duration="2000">
               <img src="./about/make.png" alt="">
               <p>除了提供美味的甜點，Lizi’s cake house也致力於關懷社會，因此在假日時，也會到國小去開設蛋糕課程，與小朋友做互動。</p>
           </li>
@@ -145,6 +146,10 @@
       </li>
     </ul>
   </footer>
-    
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>  
 </body>
 </html>

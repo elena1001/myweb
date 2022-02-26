@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login.html</title>
+    <title>登入頁面-Lizi's cake house</title>
     <link rel="icon" href="./header/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/login.css">
 </head>
@@ -77,10 +78,10 @@
   </header>
     <!-- ------------登入頁面----------------- -->
     <main>
-    <div class="wrapper_login">
+    <div class="wrapper_login" >
         <img src="./login/login_1.png" alt="">
         <div class="login_ri">
-            <ul class="login_ri_top">
+            <ul class="login_ri_top" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
                 <li><a href="#">Facebook登入</a></li>
                 </li><input type="text" placeholder="電子信箱:" name="account"> </li>
                 </li><input type="text" placeholder="密碼:" name="password"> </li>
@@ -92,5 +93,9 @@
         </div>
     </div>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> 
 </body>
 </html>

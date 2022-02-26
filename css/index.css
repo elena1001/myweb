@@ -58,7 +58,7 @@
     font-weight: bold;
     text-shadow: 3px 3px 0px rgba(223, 187, 158, 0.445);
 }
-.index_aboutri h2::before{
+.index_aboutri h2:before{
     position: absolute;
     content: "";
     display: block;

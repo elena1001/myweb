@@ -148,7 +148,9 @@
 .downcart{
     padding-top: 50px;
 }
-
+.downcart_produ{
+    width:1200px;
+}
 .downcart_produ h4{
     text-align: center;
     background-color: #f5e2e0d7;
@@ -161,27 +163,32 @@
     display: flex;
     width:100%;
     padding-top: 50px;
-    margin: 0 auto;
-    padding-left: 80px;
     padding-bottom: 50px;
-    margin-bottom: 10px;
     background-color: rgba(255, 255, 255, 0.726);
 }
 .downcart_produ li{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
     width:100%;
-    margin-left: 30px;
+    margin: 0 10px;
 }
 .downcart_produ img{
-    width:150px;
+    width:100%;
 }
 .downcart_produ p{
     margin-top: 20px;
+    text-align: center;
+    line-height: 1.6;
 }
 .downcart_produ i{
     color:#F0C3A7;
-    margin-top: 70px;
+    font-size: 30px;
 }
-
+.downcart_produ .sign_ri i{
+    text-align: right;
+}
 
 @media screen and (max-width: 575.98px){
     .wrapper_cart{
@@ -232,6 +239,9 @@
     .btn input{
         font-size: 14px;
     }
+    .downcart_produ{
+        width:320px;
+    }
   }
   
   @media screen and (min-width: 576px) and (max-width: 767.98px){
@@ -257,7 +267,9 @@
     .main_cartbottom h5{
         font-size: 18px;
     }
-   
+    .downcart_produ{
+        width:550px;
+    }
   }
   
   @media screen and (min-width:768px) and (max-width:991.98px){
@@ -267,16 +279,25 @@
     .banner_cart h2{
         font-size: 24px;
     }
+    .downcart_produ{
+        width:700px;
+    }
   }
   
   @media screen and (min-width:992px) and (max-width:1199.98px){
     .wrapper_cart{
         width:800px;
     }
+    .downcart_produ{
+        width:800px;
+    }
   }
   
   @media screen and (min-width:1200px) and (max-width:1399.98px){
     .wrapper_cart{
+        width:1000px;
+    }
+    .downcart_produ{
         width:1000px;
     }
   }

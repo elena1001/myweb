@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>index.html</title> 
+    <title>Lizi's cake house</title> 
     <link rel="icon" href="./header/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/index.css">
    
@@ -89,7 +90,7 @@
   </div>
   
 <!-- -------主頁大畫面------ -->
-  <div class="banner">
+  <div class="banner" >
     <video src="./mainpage/cake.mp4" autoplay muted loop></video>
     <h2>LIZI'S CAKE HOUSE</h2>
   </div>
@@ -98,22 +99,22 @@
 
   <!-- -------品牌起源----------- -->
   <main>
-    <div class="index_about">
+    <div class="index_about" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
       <img src="./mainpage/index_about.png" alt="">
       <div class="index_aboutri">
-        <h2>品牌起源</h2>
-        <p>Lizi’s cake house 創立於西元2021年10月1日，創辦人認為世界上沒有甚麼困難的事跟過不去的坎，如果有，那就吃甜點吧。</p>
+        <h2  >品牌起源</h2>
+        <p>品牌起源>Lizi’s cake house 創立於西元2021年10月1日，創辦人認為世界上沒有甚麼困難的事跟過不去的坎，如果有，那就吃甜點吧。</p>
       </div>
     </div>
 
    <!-- ---------最新消息---------- -->
 
-    <div class="index_news">
+    <div class="index_news"  data-aos="fade-up" data-aos-duration="3000">
       <a href="./news1.html"><h2>News</h2></a>
     </div>
 
    <!-- ---- ----------商品列表----------------- -->
-   <div class="main3">
+   <div class="main3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" >
       <h2>商品列表</h2>
       <ul>
         <li>
@@ -143,7 +144,7 @@
     </div> 
 
       <!-- --------ig組圖--------- -->
-      <div class="main4">
+      <div class="main4" data-aos="fade-up" data-aos-duration="3000">
       </div>      
   </main>
     
@@ -182,6 +183,10 @@
     </ul>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="./js/all.js"></script>
 </body>
 </html>

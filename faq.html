@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>faq.html</title>
+    <title>常見問題-Lizi's cake house</title>
     <link rel="icon" href="./header/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/faq.css">
 </head>
@@ -86,12 +87,12 @@
       <div class="background_faq">
         <img src="./faq/background_faq.png" alt="" >
       </div>
-      <div class="banner_faq">
+      <div class="banner_faq" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
           <p>question</p>
           <h2>常見問題</h2>
       </div>
       
-      <div class="faq_container">
+      <div class="faq_container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
           <ul>
             <li>
               <img src="./faq/cake.svg" alt="">
@@ -109,45 +110,45 @@
         </div> 
     
         <!-- --------下方問題區塊-------- -->
-      <div class="main_faq">
+      <div class="main_faq" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
         <h3>甜點保存問題</h3>
         <ul>
-          <li>
+          <li data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"   data-aos-duration="1000" >
             <img src="./faq/squirrel.svg" alt="">
             <div class="main_faqin">
               <h4>Q: 素食者也可享用Lizi的蛋糕嗎？</h4>
               <p>A: 大部分蛋糕為蛋奶素，少數口味製作上含有動物膠非素食。</p>
           </div>
           </li>
-          <li>
+          <li data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"   data-aos-duration="1000">
             <img src="./faq/squirrel.svg" alt="">
             <div class="main_faqin">
               <h4>Q： 保存期限多少？</h4>
               <p>A: 蛋糕商品請冷藏保存，可保存3天，建議1~2日內食用完畢，風味最佳。</p>
             </div>
           </li>
-          <li>
+          <li data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"   data-aos-duration="1000">
             <img src="./faq/squirrel.svg" alt="">
             <div class="main_faqin">
               <h4>Q: 沒冷藏的情況下，最多能保存幾小時？</h4>
               <p>A: 蛋糕皆有附保冷劑，避免日光直曬可保存3-4小時。無保冷劑情況下，離開冷藏可保存1~2小時，並請務必在1~2天內享用完畢，以確保蛋糕的新鮮度。</p>
             </div>
           </li>
-          <li>
+          <li data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"   data-aos-duration="1000">
             <img src="./faq/squirrel.svg" alt="">
             <div class="main_faqin">
               <h4>Q: 蛋糕的尺寸？大約適合幾個人享用？</h4>
               <p>A: 千層系列：6吋適合4~6人享用（拼圓可以8人享用），9吋適合8~12人享用。蛋糕系列：6吋適合4~6人享用，8吋適合5~10人享用。</p>
             </div>
           </li>
-          <li>
+          <li data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"   data-aos-duration="1000">
             <img src="./faq/squirrel.svg" alt="">
             <div class="main_faqin">
               <h4>Q: 布丁蛋為什麼吃到最後會有一點一點黑黑小顆粒？是過期變質嗎？</h4>
               <p>A: 布丁蛋使用精選的天然香草籽製作，沉澱的黑色小顆粒為香草籽細末，非食物變質，請安心食用。</p>
             </div>
           </li>
-          <li>
+          <li data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"   data-aos-duration="1000">
             <img src="./faq/squirrel.svg" alt="">
             <div class="main_faqin">
               <h4>Q: 蛋糕盤子提供幾個?為什麼6吋沒有另附盤子?</h4>
@@ -196,5 +197,11 @@
         </li>
       </ul>
     </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> 
 </body>
 </html>
