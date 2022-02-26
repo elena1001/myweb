@@ -34,7 +34,7 @@
 .index_about{
     display: flex;
     width: 1000px;
-    margin: 50px auto;
+    margin: 80px auto;
     position: relative;
 }
 .index_aboutri{
@@ -105,18 +105,17 @@
 }
 .main3 h2{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 80px;
     font-size: 28px;
     font-weight: bold;
 }
 .main3 ul{
     display: flex;
     width:1200px;
-    height:400px;
     margin: 0 auto;
 }
 .main3 li{
-   margin:80px auto;
+   margin:50px auto;
 }
 .main3 img{
     display:block;
@@ -138,27 +137,23 @@
     color:#90AACB;
 }
  /* -----------商品輪播----------------  */
-
-.product_carousel{
-    width: 100%;
-    height:100%;
-    margin: 50px auto;
-}
-.product_carousel ul{
+ .product_carousel{
+    width: 1200px;
     display: flex; 
-}
-
-.product_carousel li{
-   
-   padding: 10px;
+    margin: 50px auto;
+    padding: 10px;
 }
 .product_carousel img{
-    width:100%;
+    width:80%;
     display: block;
+    margin: 0 auto;
+}
+.slick-prev:before, .slick-next:before {
+    color:#f09963;
 }
 /* -------主頁ig組圖-------------- */
 .main4 {
-    margin-top: 100px;
+    margin-top: 50px;
     height:500px;
     background-image: url(../mainpage/ig.png);
     background-size: 100% 100%;
@@ -200,19 +195,14 @@
     }
     .index_news{
         width:320px;
-        height: 300px;
+        height: 200px;
     }
     .index_news h2{
         font-size: 50px;
-        line-height: 300px;
-    }
-    .product_carousel{
-        margin: 10px 0 ;
-
+        line-height: 200px;
     }
     .main3 ul{
         width:320px;
-        height:300px;
     }
     .main3 h2{
         font-size: 20px;
@@ -222,6 +212,9 @@
     }
     .main3 a{
         font-size: 16px;
+    }
+    .product_carousel{
+        width: 320px;
     }
     .main4 {
         margin-top: 0;
@@ -274,7 +267,10 @@
         font-size: 24px;
     }
     .main3 img{
-        width:150px; 
+        width:120px; 
+    }
+    .product_carousel{
+        width: 500px;
     }
     .main4 {
         margin-top: 0;
@@ -314,7 +310,10 @@
         width:700px;
     }
     .main3 img{
-        width:180px; 
+        width:150px; 
+    }
+    .product_carousel{
+        width: 700px;
     }
     .main4 {
         margin-top: 0;
@@ -348,6 +347,9 @@
     .main3 ul{
         width:900px;
     }
+    .product_carousel{
+        width: 900px;
+    }
     .main4 {
         margin-top: 0;
         background-size: 100% 90%;
@@ -360,6 +362,9 @@
     }
     .main3 ul{
         width:1000px;
+    }
+    .product_carousel{
+        width: 1000px;
     }
   }
   

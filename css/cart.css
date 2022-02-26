@@ -159,40 +159,59 @@
     padding: 5px;
     line-height: 40px;
 }
-.downcart_produ ul{
-    display: flex;
-    width:100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: rgba(255, 255, 255, 0.726);
+
+/* -----輪播------- */
+html,body {
+    position: relative;
+    height: 100%;
 }
-.downcart_produ li{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-content: center;
-    width:100%;
-    margin: 0 10px;
+:root {
+    --swiper-theme-color:#D57149;
 }
-.downcart_produ img{
-    width:100%;
+.swiper {
+    width: 100%;
+    height: 100%;
 }
-.downcart_produ p{
-    margin-top: 20px;
+
+.swiper-slide {
     text-align: center;
-    line-height: 1.6;
+    font-size: 18px;
+    width:70%;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+     -webkit-align-items: center;
+     align-items: center;
 }
-.downcart_produ i{
-    color:#F0C3A7;
-    font-size: 30px;
+.swiper-slide a{
+    text-decoration: none;
+    color: #D57149;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
-.downcart_produ .sign_ri i{
-    text-align: right;
+.swiper-slide img {
+    display: block;
+    width: 70%;
+    margin: 20px auto;
+    height: 100%;
+    object-fit: cover;
 }
+
 
 @media screen and (max-width: 575.98px){
     .wrapper_cart{
         width:320px;
+    }
+    .banner_cart{
+        margin-top: 20px;
     }
     .banner_cart h2{
         font-size: 20px;
@@ -201,7 +220,7 @@
         font-size: 14px;
       }
     .top_cart h4{
-        font-size: 12px;
+        font-size: 13px;
      }
      .top_cart ul{
         margin-top: 20px;
@@ -242,6 +261,12 @@
     .downcart_produ{
         width:320px;
     }
+    .downcart_produ h4{
+        font-size: 18px;
+    }
+    .swiper-slide a{
+        font-size: 16px;
+    }
   }
   
   @media screen and (min-width: 576px) and (max-width: 767.98px){
@@ -250,6 +275,7 @@
     }
     .banner_cart h2{
         font-size: 24px;
+        
     }
     .top_cart h4{
         font-size: 16px;

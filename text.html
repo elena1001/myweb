@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+}
+#banner{
+    width:520px;
+    height:280px;
+    position:absolute;
+    top:50%;
+    margin-top:-140px;
+    left:50%;
+    margin-left:-260px;
+}
+.pic img{
+    position:absolute;
+}
+.tabs{
+    position:absolute;
+    bottom:10px;
+    left:200px;
+}
+.tabs li{
+    width:20px;
+    height:20px;
+    border:2px solid #fff;
+    float:left;
+    margin-left:5px;
+    border-radius:100%;
+
+}
+.btn{
+    width:30px;
+    height:50px;
+    background-color:rgba(0,0,0,.5);
+    color:#fff;
+    font-size:30px;
+    line-height:50px;
+    text-align:center;
+    position:absolute;
+    top:50%;
+    margin-top:-25px;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color:rgba(0,0,0,.8);
+    color:red;
+}
+.btn1{
+    left:0;
+}
+.btn2{
+    right:0;
+}
+.bg{
+    background-color:red;
+}
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <div class="pic">
+            <div class="picImg"><img src="./cart/product1.png" width="520" height="280" /></div>
+            <div class="picImg"><img src="./cart/product2.png" width="520" height="280" /></div>
+            <div class="picImg"><img src="./cart/product3.png" width="520" height="280" /></div>
+            <div class="picImg"><img src="./cart/product4.png" width="520" height="280" /></div>
+            <div class="picImg"><img src="./cart/product5.png" width="520" height="280" /></div>
+        </div>
+        <ul class="tabs">
+            <li class="bg"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="btn btn1">&lt;</div>
+        <div class="btn btn2">&gt;</div>
+    </div>
+
+   <script> 
+   
+var i=0;
+var Timer;
+$(function(){
+    $(".picImg").eq(0).show().siblings().hide();   //默認第一張圖片顯示，其他的隱藏
+    //自動輪播
+    TimerBanner();
+
+    //點擊紅圈
+
+    $(".tabs li").hover(function(){  //鼠標移動上去
+        clearInterval(Timer); //讓計時器暫時停止   清除計時器
+        i=$(this).index();   //獲取該圈的索引
+        showPic();           //調用顯示圖片的方法，顯示該索引對應的圖片
+    },function(){  //鼠標離開
+        TimerBanner();    //繼續輪播   計時器開始
+    });
+
+    //點擊左右按鈕
+    $(".btn1").click(function(){
+        clearInterval(Timer);
+        i--;   //往左
+        if(i==-1){
+            i=4;
+        }
+        showPic();
+        TimerBanner();
+    });
+    $(".btn2").click(function(){
+        clearInterval(Timer);
+        i++;   //往右
+        if(i==5){
+            i=0;
+        }
+        showPic();
+        TimerBanner();
+    });
+});
+//輪播部分
+function TimerBanner(){
+    Timer = setInterval(function(){
+        i++;
+        if(i==5){
+            i=0;
+        }
+        showPic()
+    },1000);
+}
+//顯示圖片
+function showPic(){
+    $(".picImg").eq(i).show().siblings().hide();
+    $(".tabs li").eq(i).addClass("bg").siblings().removeClass("bg");
+}
+</script> 
+</body>
+</html>
