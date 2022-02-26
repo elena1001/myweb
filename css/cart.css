@@ -1,6 +1,9 @@
 /* -------購物車--------- */
 .banner_cart{
-
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 3px 3px 0px rgba(223, 187, 158, 0.445);
 }
 .banner_cart img{
     width:100%;
@@ -8,22 +11,22 @@
     display:block;
  }
  .banner_cart h2{
-     margin-left: 50px;
-     margin-top: 50px;
-     text-align: center;
+    width:100%;
  }
+ .banner_cart p{
+    line-height: 1.6;
+  }
 .wrapper_cart{
     width:1200px;
     margin: 0 auto;
-    border:2px solid red;
 }
  .top_cart{
     width: 100%;
-    border:2px solid green;
  }
  .top_cart ul{
      display: flex;
      justify-content: center;
+     margin-top: 30px;
  }
  .top_cart li{
      margin-left: 20px;
@@ -33,51 +36,49 @@
      width:80px;
      height:5px;
      background-color: #90AACB;
-     margin-top: 10px;
+     margin-top: 5px;
  }
-
- .main_cart{}
  .main_carttop{
     width:100%;  
  }
  .main_carttop ul{
      display: flex;
      width:100%;
-     margin: 0 auto;
-     margin-top: 50px;
+     margin: 0px auto;
+     margin-top: 40px;
      line-height: 2;
      background-color: #90AACB;
  }
  .main_carttop li{
      font-size: 20px;
      color:#fff;
-     margin: 0 auto;
-    
+     flex-grow: 1;
+     flex-basis: 0;
+     text-align: center;
  }
 .main_cartmid ul{
     display:flex;
+    align-content: center;
     width:100%;
     background-color: rgba(255, 255, 255, 0.726);
     margin: 0 auto;
-    padding-top:50px;
-    padding-bottom: 50px;
-    padding-left: 10px;
-    
+    padding-top: 40px;
+    padding-bottom: 50px; 
 }
 .main_cartmid li{
     width:100%;
-    flex-grow: 1;
- 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50%;
 }
 .main_cartmid img{
-    width:150px;
+    width:100%;
+    padding: 10px;
 }
-.main_cartmid h5{
-    margin-top: 50px;
-    
 }
+
 .amount_number{
-    margin-top: 48px;
     color:#D57149;
     font-size: 16px;
     border:none;
@@ -92,7 +93,6 @@
 }
 
 .main_cartmid i{
-    margin-top:48px;
     color: #D57149;
 }
 .main_cartmid i:hover{
@@ -104,9 +104,6 @@
     line-height: 1.8;
     width: 30px;
     height:30px;
-}
-.main_cartbottom{
-    
 }
 .main_cartbottom ul{
     width:100%;
@@ -169,12 +166,10 @@
     padding-bottom: 50px;
     margin-bottom: 10px;
     background-color: rgba(255, 255, 255, 0.726);
-    border:2px solid blue;
 }
 .downcart_produ li{
     width:100%;
     margin-left: 30px;
-    border:2px solid red;
 }
 .downcart_produ img{
     width:150px;
@@ -186,25 +181,91 @@
     color:#F0C3A7;
     margin-top: 70px;
 }
-main{
-    /* border:2px solid red; */
-}
+
 
 @media screen and (max-width: 575.98px){
     .wrapper_cart{
-        width:400px;
+        width:320px;
+    }
+    .banner_cart h2{
+        font-size: 20px;
+     }
+     .banner_cart p{
+        font-size: 14px;
+      }
+    .top_cart h4{
+        font-size: 12px;
+     }
+     .top_cart ul{
+        margin-top: 20px;
+     }
+     .top_cart li{
+        margin-left: 5px; 
+     }
+     .top_cart span{
+        display: block;
+        width:20px;
+
+    }
+    .amount_number{
+        font-size: 8px;
+        width:40px;
+     }
+    .main_carttop li{
+        font-size: 10px;
+    }
+    .main_cartmid h5{
+        font-size: 10px;
+        line-height: 1.5;
+        text-align: center;
+        padding: 5px;
+    }
+    .main_cartmid i{
+        font-size: 10px;
+    }
+    .main_cartmid img{
+        padding: 2px;
+    }
+    .main_cartbottom h5{
+        font-size: 14px;
+    }
+    .btn input{
+        font-size: 14px;
     }
   }
   
   @media screen and (min-width: 576px) and (max-width: 767.98px){
     .wrapper_cart{
-        width:500px;
+        width:550px;
     }
+    .banner_cart h2{
+        font-size: 24px;
+    }
+    .top_cart h4{
+        font-size: 16px;
+     }
+     .top_cart span{
+        display: block;
+        width:50px;
+    }
+    .main_carttop li{
+        font-size: 18px;
+    }
+    .main_cartmid h5{
+        font-size: 16px;
+    }
+    .main_cartbottom h5{
+        font-size: 18px;
+    }
+   
   }
   
   @media screen and (min-width:768px) and (max-width:991.98px){
     .wrapper_cart{
         width:700px;
+    }
+    .banner_cart h2{
+        font-size: 24px;
     }
   }
   
