@@ -1,4 +1,10 @@
 
+//------loading------
+window.addEventListener("load",function(){
+  document.getElementsByClassName("loading_block")[0].remove();
+  });
+
+//------------漢堡--------------
 $(document).ready(function(){
 
     $("button.hamburger_icon").on("click", function(){
@@ -8,6 +14,7 @@ $(document).ready(function(){
 
 });
 
+//--------刪除商品-------
 
 document.addEventListener("DOMContentLoaded", function(){
   document.addEventListener("click",function(e){
