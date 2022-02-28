@@ -91,7 +91,20 @@
 .main_cartmid a{
     display: block;
 }
-
+.main_cartmid{
+}
+.none_pro{
+    width:100%;
+    height: 300px;
+    background-color: #D57149;
+    display:none;
+}
+.big_text{
+    width:100%;
+    height: 300px;
+    background-color: #D57149;
+    display:block;
+}
 .main_cartmid i{
     color: #D57149;
 }

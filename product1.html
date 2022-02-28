@@ -42,7 +42,7 @@
                       <h5> 1x NT$750</h5>
                   </li>
                   <li>
-                      <a href="#"><i class="fas fa-trash-alt"></i></a>
+                      <a href="#"><i class="fas fa-trash-alt trash"></i></a>
                   </li>
               </ul> 
               <div class="to_cart">
@@ -211,9 +211,13 @@
     <script>
       AOS.init();
 
-      var button_product_add = document.getElementsByClassName("product_add")[0];
-      button_product_add.addEventListener("click",function(){
-        alert("ddd");
+      var button_product_add = document.getElementsByClassName("product_add");
+      button_product_add[0].addEventListener("click",function(){
+        console.log("ttt");
+        // for (let i =0; i < product_add.lenght; i++) {
+          alert("已加入購物車");
+          
+        // }
       });
     </script> 
 </body>

@@ -164,7 +164,14 @@ header{
 
   /* -----浮動購物車--------- */
 .float_cartmain{
-    border:2px solid red;
+
+}
+
+.float_cart_up{
+    position: absolute;
+    right:0px;
+    top:0px;
+    height:100px;
 }
 .float_cart{
     position: absolute;
@@ -172,6 +179,9 @@ header{
     top:60px;
     z-index: 9;
     display:none;
+    background-color: rgba(255, 255, 255, 0.973);
+    height:200px;
+    width:400px;
 }
 .float_cart ul{
     display:flex;
@@ -180,6 +190,7 @@ header{
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.973);
     padding: 10px 0 10px 10px;
+    /* display:none; */
 }
 .float_cart li{
     flex-grow: 1;
@@ -203,10 +214,14 @@ header{
 .float_cart i:hover{
     color: #90AACB;
 }
+.to_cart{
+    background-color: rgba(255, 255, 255, 0.973);
+    padding-top: 200px;
+}
 .to_cart a{
     text-decoration: none;
     width:100%;
-    line-height: 40px;
+    line-height: 60px;
     color:#fff;
     display: block;
     margin: 0 auto;
