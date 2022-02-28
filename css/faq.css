@@ -54,6 +54,9 @@
 .faq_container a:hover{
     color:#90AACB;
 }
+.faq_container img:hover{
+    transform: scale(1.2);
+}
 
 /* -----下方問題區塊----- */
 

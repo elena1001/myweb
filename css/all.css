@@ -79,11 +79,13 @@ header{
 .user i{
     font-size: 30px;
     color:#f09963;
+    margin-left: 50px;
 }
 
 .shop i{
     font-size:30px;
     color:#f09963;
+    margin-right: 30px;
 }
 .user hover:i{
     color:#7e9fca;
@@ -108,50 +110,12 @@ header{
     background-color: #e0835e;
     border-radius: 10px;
     color: white;
-    right:24px;
-    top: 14px;
+    right: 40px;
+    top: 16px;
 }
 .nav_a>a:hover{
     color:#90AACB;
 }
-/* ------loading--------- */
-.loading{
-    background-color: #6d625b;
-    position: fixed;
-    width: 100%;
-    height:100%;
-    z-index: 999;
-    top: 0;
-    display: none;
-}
-@keyframes twinkle{
-    0%{
-      opacity: .1;
-    }
-    100%{
-      opacity: 1;
-    }
-  }
-.loading img{
-    display: block;
-    position:absolute;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    margin:auto;
-    width:150px;
-
-    animation-name: twinkle;
-    animation-duration: .8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-
-    
-
 /* ------旁邊社群紐------ */
 .right_social{
     position: fixed;
@@ -179,7 +143,7 @@ header{
   right: 300px;
   top: 60px;
   display: none;
-  background-color: #f5ceb5fd;
+  background-color: #f5ceb5e1;
 
 }
 .header ol>li>a{
@@ -199,7 +163,9 @@ header{
   }
 
   /* -----浮動購物車--------- */
-
+.float_cartmain{
+    border:2px solid red;
+}
 .float_cart{
     position: absolute;
     right:0px;
@@ -325,8 +291,6 @@ header{
     top: 20px;
     width: 105%;
 }
-
-.header_button a{}
 .header_button_bg{
     width: 100%;
     height: 100%;
@@ -551,8 +515,7 @@ header{
         width:100%;
     }
     .shop span{
-        right:15px;
-        top: 14px;
+        right:30px;
     }
     .header li{
         width:80px;

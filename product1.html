@@ -100,7 +100,7 @@
           <a href="#" class="products_card_top">
               <div class="products_card__topin">
                   <img src="./product/products1.png" alt="">
-                  <span>加入購物車</span>
+                  <span class=" product_add">加入購物車</span>
               </div>
           </a>
           <a href="#" class="products_card_down">
@@ -112,7 +112,7 @@
           <a href="#" class="products_card_top">
               <div class="products_card__topin">
                   <img src="./product1/cake1.png" alt="">
-                  <span>加入購物車</span>
+                  <span class=" product_add">加入購物車</span>
               </div>
           </a>
           <a href="#" class="products_card_down">
@@ -124,7 +124,7 @@
           <a href="#" class="products_card_top">
               <div class="products_card__topin">
                   <img src="./product1/cake2.png" alt="">
-                  <span>加入購物車</span>
+                  <span class=" product_add">加入購物車</span>
               </div>
           </a>
           <a href="#" class="products_card_down">
@@ -136,7 +136,7 @@
           <a href="#" class="products_card_top">
               <div class="products_card__topin">
                   <img src="./product1/cake3.png" alt="">
-                  <span>加入購物車</span>
+                  <span class=" product_add">加入購物車</span>
               </div>
           </a>
           <a href="#" class="products_card_down">
@@ -148,7 +148,7 @@
           <a href="#" class="products_card_top">
               <div class="products_card__topin">
                   <img src="./product1/cake4.png" alt="">
-                  <span>加入購物車</span>
+                  <span class=" product_add">加入購物車</span>
               </div>
           </a>
           <a href="#" class="products_card_down">
@@ -160,7 +160,7 @@
           <a href="#" class="products_card_top">
               <div class="products_card__topin">
                   <img src="./product1/cake5.png" alt="">
-                  <span>加入購物車</span>
+                  <span class=" product_add">加入購物車</span>
               </div>
           </a>
           <a href="#" class="products_card_down">
@@ -210,6 +210,11 @@
     <script src="./js/all.js"></script>
     <script>
       AOS.init();
+
+      var button_product_add = document.getElementsByClassName("product_add")[0];
+      button_product_add.addEventListener("click",function(){
+        alert("ddd");
+      });
     </script> 
 </body>
 </html>

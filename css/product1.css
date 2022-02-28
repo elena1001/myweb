@@ -59,6 +59,12 @@ aside a:hover{
 .products_card_down p{
     line-height: 2;
 }
+.products_card_down h4:hover{
+    color:#90AACB;
+}
+.products_card_down p:hover{
+    color:#90AACB;
+}
 .products_card__topin{
     width:100%;
     position: relative;
