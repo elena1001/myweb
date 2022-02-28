@@ -98,21 +98,6 @@ header{
 .shop:hover .float_cart {
     display: block;
 }
-
-.shop span{
-    position: absolute;
-    z-index: 5;
-    font-size: 12px;
-    width: 18px;
-    height: 18px;
-    line-height: 18px;
-    text-align: center;
-    background-color: #e0835e;
-    border-radius: 10px;
-    color: white;
-    right: 40px;
-    top: 16px;
-}
 .nav_a>a:hover{
     color:#90AACB;
 }
@@ -528,9 +513,6 @@ header{
 @media screen and (min-width:768px) and (max-width:991.98px){
     .header{
         width:100%;
-    }
-    .shop span{
-        right:30px;
     }
     .header li{
         width:80px;

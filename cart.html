@@ -31,7 +31,6 @@
         <li class="user"><a href="./login.html"><i class="fas fa-user"></i></a></li>
         <li class="shop">
           <a href="#"><i class="fas fa-shopping-cart"></i></a>
-          <span>1</span>
           <div class="float_cart">
             <ul class="float_cartmain">
               <li>
@@ -122,60 +121,61 @@
           </ul>
         </div>
         <div class="main_cartmid" >
-          <div class="none_pro">eeeeeee</div>
-          <ul>
+          <!-- <div class="none_pro">購物車是空的!</div> -->
+          <ul  class="product_price" data-price ="750">
             <li>
-              <img src="./product/products1.png" alt="">
+                <img src="./product/products1.png" alt="">
             </li>
             <li>
               <h5>草莓乳酪塔</h5>
             </li>
             <li>
-              <input class="amount_number" type="number" name="" id="number" placeholder="1" min="1" max="10" onchange="calculatePrice()"></h5>
+              <input class="quantity" type="number" name="" id="number" placeholder="1" min="1" max="10" >
             </li>
             <li>
-              <h5>NT$750</h5>
+              <h5>NT$<span>750</span></h5>
             </li>
             <li>
-              <h5>NT$750</h5>
+              <h5>NT$<span id ="total">750</span></h5>
             </li>
             <li>
               <a href="#"><i class="fas fa-trash-alt trash"></i></a>
             </li>
-          </ul>
-        </div>
+        </ul>
+      </div>
         <div class="main_cartmid">
-          <ul>
+          <ul  class="product_price" data-price ="850">
               <li>
-                  <img src="./product/products1.png" alt="">
+                <img src="./product1/cake6.png" alt="">
               </li>
               <li>
-                  <h5>草莓乳酪塔</h5>
+                  <h5>戀戀梅果巧克</h5>
               </li>
               <li>
-                  <input class="amount_number" type="number" name="" id="number" placeholder="1" min="1" max="10" onchange="calculatePrice()">
+                <input class="quantity" type="number" name="" id="number" placeholder="1" min="1" max="10" >
               </li>
               <li>
-                  <h5>NT$750</h5>
+                <h5>NT$<span>850</span></h5>
               </li>
               <li>
-                  <h5>NT$750</h5>
+                <h5>NT$<span id ="total">850</span></h5>
               </li>
               <li>
-                  <a href="#"><i class="fas fa-trash-alt trash"></i></a>
+                <a href="#"><i class="fas fa-trash-alt trash"></i></a>
               </li>
           </ul>
         </div>
+
         <div class="main_cartbottom">
           <ul>
               <li>
-                  <h5>商品小計:NT$100</h5>
+                  <h5>商品小計:NT$750</h5>
               </li>
               <li>
                   <h5>商品折扣:NT$0</h5>
               </li>
               <li>
-                  <h5>商品總價:NT$100</h5>
+                  <h5>商品總價:NT$750</h5>
               </li>
           </ul>
           <ul class="btn">
@@ -290,6 +290,21 @@
           }
         });
 
+
+
+
+        $(document).ready(function(){
+          $('.product_price').on( 'keyup','.quantity',function(){
+            var price = +$(this).closest('.product_price').data('price');
+            var quantity = +$(this).val();
+            $(this).closest('.product_price').find('#total').text(price*quantity);
+          });
+            $('.product_price').on( 'click','.quantity',function(){
+            var price = +$(this).closest('.product_price').data('price');
+            var quantity = +$(this).val();
+            $(this).closest('.product_price').find('#total').text(price*quantity);
+          });
+        });
       </script>
       
 </body>
