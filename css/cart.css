@@ -292,6 +292,11 @@
     .swiper-slide a{
         font-size: 16px;
     }
+    .swiper-slide span{
+        top: 30%;
+        height: 26%;
+        font-size: 12px;
+    }
   }
   
   @media screen and (min-width: 576px) and (max-width: 767.98px){
@@ -321,6 +326,10 @@
     .downcart_produ{
         width:550px;
     }
+    .swiper-slide span{
+        top: 26%;
+        height: 42%;
+    }
   }
   
   @media screen and (min-width:768px) and (max-width:991.98px){
@@ -333,6 +342,10 @@
     .downcart_produ{
         width:700px;
     }
+    .swiper-slide span{
+        top: 23%;
+        height: 48%;
+    }
   }
   
   @media screen and (min-width:992px) and (max-width:1199.98px){
@@ -342,6 +355,10 @@
     .downcart_produ{
         width:800px;
     }
+    .swiper-slide span{
+        top: 21%;
+        height: 52%;
+    }
   }
   
   @media screen and (min-width:1200px) and (max-width:1399.98px){
@@ -350,6 +367,10 @@
     }
     .downcart_produ{
         width:1000px;
+    }
+    .swiper-slide span{
+        top: 19%;
+        height: 57%;
     }
   }
   

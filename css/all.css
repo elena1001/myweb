@@ -482,7 +482,7 @@ header{
         display: none;
     }
     .right_social{
-        right:-15px;
+        right:5px;
     }
     .right_social i{
         font-size: 30px;
@@ -559,7 +559,7 @@ header{
         font-size: 18px;
     }
     .right_social{
-        right:-15px;
+        right:5px;
     }
     .right_social i{
         font-size: 35px;
