@@ -29,7 +29,6 @@ p{
     font-size: 16px;
     color:#D57149;
 }
-
 /* --------主選單---------- */
 header{
     position: sticky;
@@ -115,8 +114,43 @@ header{
 .nav_a>a:hover{
     color:#90AACB;
 }
+/* ------loading--------- */
+.loading{
+    background-color: #6d625b;
+    position: fixed;
+    width: 100%;
+    height:100%;
+    z-index: 999;
+    top: 0;
+    display: none;
+}
+@keyframes twinkle{
+    0%{
+      opacity: .1;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+.loading img{
+    display: block;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width:150px;
+
+    animation-name: twinkle;
+    animation-duration: .8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 
 
+    
 
 /* ------旁邊社群紐------ */
 .right_social{
@@ -218,54 +252,26 @@ header{
     background-color: #F0C3A7;
 }
 /* -----漢堡--------- */
-
 .hamburger{
-    width: 100%;
-    height: 100vh;
-    background-color: #F0C3A7;
-    position: absolute; 
-    left: 0;
-    top:0;
-    z-index: 99;
     display: none;
 }
 
-.hamburger ul{
-    display: flex;
-    flex-direction: column;
-    height:100%;
-}
-.hamburger li{
-    margin: 0 auto;
-    margin-top: 30px;
-}
-.hamburger a{
-    text-decoration: none;
-    color: #D57149;
-    font-size: 24px;
-}
-.hamburger img{
-    width: 100px;
-    display: block;
-    margin:  50px auto;
-}
-.hamburger i{
-    color:#e0835e;
-    font-size: 30px;
-    margin: 0 auto;
-    /* margin-right: 20px; */
-}
 /* -----漢堡列------ */
 .nav_ham{
     display: flex;
     background-color: #f0c9b2;
     width: 100%;
     display: none;
+    z-index: 9999;
 }
-.nav_ham img{
+.nav_ham a{
     width: 120px;
+    display: block;
     padding: 5px;
     margin: auto;
+}
+.nav_ham img{
+    width: 100%;
     display: block;
 }
 .ham_btn{
@@ -294,8 +300,6 @@ header{
     bottom:0;
     right:0;
 }
-
-
 .hamburger_icon span.-top{
     top:25%;
 }
@@ -322,9 +326,6 @@ header{
     width: 105%;
 }
 
-
-.header_button{  
-}
 .header_button a{}
 .header_button_bg{
     width: 100%;
@@ -339,26 +340,7 @@ header{
     height:50px;
     background-color: #e0835e;
 }
-/* ------loading------ */
-.loading{
-    background-color: #F0C3A7;
-    position: fixed;
-    width: 100%;
-    height:100%;
-    z-index: 999;
-    top: 0;
-    display: none;
-}
-.loading img{
-    display: block;
-    position:absolute;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    margin:auto;
-    width:150px;
-}
+
 /* ---------頁尾------------ */
 
 .footer{
@@ -452,8 +434,45 @@ header{
     .footer a{
         font-size: 14px;
     }
- 
-       
+      /* -----漢堡------ */
+    .hamburger{
+        max-height: 0px;
+        display: block;
+        overflow: hidden;
+        background-color: #f0c3a7da;
+        position: absolute; 
+        left: 0;
+        right:0;
+        transition: max-height 2.4s;
+        top: 70px;
+        z-index: 99;
+    }
+    .hamburger ul{
+        display: flex;
+        flex-direction: column;
+        height:100%;
+        margin-bottom: 20px;
+    }
+    .hamburger li{
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .hamburger a{
+        text-decoration: none;
+        color: #D57149;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .hamburger i{
+        color:#e0835e;
+        font-size: 30px;
+        margin: 0 auto;
+        margin: 0 5px;
+    }
+    .menu-show .hamburger{
+    max-height: 500px;
+    }
 }
 @media (min-width: 576px) and (max-width: 767.98px){
     .nav_ham{
@@ -486,6 +505,45 @@ header{
         width:70px;
         line-height: 70px;
         text-align: center;
+    }
+      /* -----漢堡------ */
+      .hamburger{
+        max-height: 0px;
+        display: block;
+        overflow: hidden;
+        background-color: #f0c3a7da;
+        position: absolute; 
+        left: 0;
+        right:0;
+        transition: max-height 2.4s;
+        top: 65px;
+        z-index: 99;
+    }
+    .hamburger ul{
+        display: flex;
+        flex-direction: column;
+        height:100%;
+        margin-bottom: 20px;
+    }
+    .hamburger li{
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .hamburger a{
+        text-decoration: none;
+        color: #D57149;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .hamburger i{
+        color:#e0835e;
+        font-size: 30px;
+        margin: 0 auto;
+        margin: 0 5px;
+    }
+    .menu-show .hamburger{
+    max-height: 500px;
     }
 }
 @media screen and (min-width:768px) and (max-width:991.98px){

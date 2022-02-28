@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/index.css">
    
@@ -57,7 +58,7 @@
     
     <!-- ------漢堡------  -->
     <div class="nav_ham">
-      <img src="./header/logo.png" alt="">
+      <a href="./index.html"><img src="./header/logo.png" alt=""></a>
         <div class="ham_btn">
           <button type="button" class="hamburger_icon">
             <span class="-hr -top"></span>
@@ -67,16 +68,21 @@
         </div>
     </div>
     <div class="hamburger">
+      
       <ul>
-      </li><img src="./header/logo.png" alt=""></li>
-      <li class="nav_a"><a href="./about.html" class="nav_a">品牌起源</a></li>
-      <li class="nav_a"><a href="./news1.html" >最新消息</a></li>
-      <li class="nav_a"><a href="./product.html" >商品列表</a></li>
-      <li class="nav_a"><a href="./faq.html">常見問題</a></li>
-      <li><a href="./login.html"><i class="fas fa-user"></i></a>
-      <a href="#"><i class="fas fa-shopping-cart"></i></a>  
-    </li>
-    </ul>
+        <li class="nav_a"><a href="./about.html" class="nav_a">品牌起源</a></li>
+        <li class="nav_a"><a href="./news1.html" >最新消息</a></li>
+        <li class="nav_a"><a href="./product.html" >商品列表</a></li>
+        <li class="nav_a"><a href="./faq.html">常見問題</a></li>
+        <li><a href="./login.html"><i class="fas fa-user"></i></a>
+        <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>  
+        </li>
+      </ul>
+
+    </div>
+    <!-- -------loading------- -->
+    <div class="loading">
+      <img src="./header/logo.png" alt="">
     </div>
   </header>
   <!-- ------旁邊社群紐------ -->
@@ -183,14 +189,24 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./js/all.js"></script>
   <script>
-  $(".product_carousel").slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-  });
+    AOS.init();
+    
+    window.addEventListener("load",function(){
+      document.getElementsByClassName("loading")[0].remove();
+      console.log("圖片載入完成");
+    });
+
+
+
+    $(".product_carousel").slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+    });
   </script>
 </body>
 </html>

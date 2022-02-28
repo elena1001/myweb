@@ -146,8 +146,14 @@
     font-size: 12px;
   }
   .movecake img{
-    width:80px;
-    margin-left: 60px;
+    width:90px;
+    margin-left: 55px;
+ }
+ .mid_about{
+    margin-top: 80px;
+ }
+  .blueline img{
+   width:50px;
  }
 }
 
@@ -166,6 +172,12 @@
     width:130px;
     margin-left: 35px;
  }
+ .mid_about{
+ margin-top: 100px;
+}
+ .blueline img{
+  width:60px;
+}
 }
 
 @media screen and (min-width:768px) and (max-width:991.98px){
@@ -181,6 +193,9 @@
   .movecake img{
      width:180px;
      margin-left: 15px;
+  }
+  .blueline img{
+    width:55px;
   }
 }
 

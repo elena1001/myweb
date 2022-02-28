@@ -109,13 +109,10 @@
     width:100%;
     background-color:rgba(255, 255, 255, 0.726);
     margin: 0 auto;
-    border-top:2px dotted #FCD8D4;
-    margin-bottom: 10px;
-    
+    border-top:2px dotted #FCD8D4; 
 }
 .main_cartbottom li{
     line-height: 1.6;
-    margin-bottom: 5px;
     padding:10px;
     height: 50px;
 }
@@ -161,10 +158,6 @@
 }
 
 /* -----輪播------- */
-html,body {
-    position: relative;
-    height: 100%;
-}
 :root {
     --swiper-theme-color:#D57149;
 }
@@ -198,11 +191,30 @@ html,body {
     margin-top: 50px;
 }
 .swiper-slide img {
+    position: relative;
     display: block;
     width: 70%;
     margin: 20px auto;
     height: 100%;
     object-fit: cover;
+}
+.swiper-slide span{
+    position: absolute;
+    top: 17%;
+    left: 15%;
+    width: 70%;
+    height: 62%;
+    opacity: 0;
+    background: rgba(101, 101, 101, 0.6);
+    text-decoration: none;
+    color:#fff;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-slide span:hover{
+    opacity: 1;
 }
 
 

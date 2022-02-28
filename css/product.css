@@ -99,9 +99,11 @@ main>p{
 @media screen and (max-width: 575.98px){
    main>h2{
       font-size: 20px;
+      margin-bottom: 50px;
    }
    main>p{
       font-size: 14px;
+      margin-top: 50px;
    }
    .products_list_all{
       width:320px;
