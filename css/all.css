@@ -191,9 +191,13 @@ header{
 .float_cart_text{
     text-align: center;
     line-height: 150px;
+    
 }
 .none{
     display:none;
+}
+.show{
+    display:block;
 }
 .float_cart_up{
     position: absolute;

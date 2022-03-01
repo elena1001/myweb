@@ -130,10 +130,10 @@
 
 @media screen and (max-width: 575.98px){
   .main_about{
-    width:320px;
+    width:350px;
   }
   .main_about li{
-    width: 120px;
+    width: 160px;
   }
   .main_about li img{
     width:60%;
@@ -146,7 +146,7 @@
   }
   .main_about li p{
     width:130px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .movecake img{
     width:90px;
@@ -162,13 +162,13 @@
 
 @media screen and (min-width: 576px) and (max-width: 767.98px){
   .main_about{
-    width:550px;
+    width:570px;
   }
   .main_about li img{
     width: 65%;
   }
   .main_about li p{
-    width:80%;
+    width:70%;
     font-size: 16px;
   }
   .movecake img{

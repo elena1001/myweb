@@ -8,21 +8,23 @@ for (let i =0; i < button_product_add.length; i++) {
   });
 }
 
-var button_cart_add = document.getElementsByClassName("products_card__topin");
+var button_cart_add = document.getElementsByClassName("products_card");
 for(let i = 0 ; i < button_cart_add.length; i++){
   button_cart_add[i].addEventListener("click",function(){
-
+    // let products_pic = document.getElementsByClassName("products_pic")[1];
+    // let products_name = document.getElementsByClassName("products_name")[1];
+    // let products_price = document.getElementsByClassName("products_price")[1];
     let list_item =`
     <div>
         <ul class="float_cartmain">
             <li>
-                <img src="./product/products1.png" alt="">
+                <img src="./product1/cake6.png" alt="">
             </li>
             <li>
-                <h5>草莓乳酪塔</h5>
+                <h5>戀戀梅果巧克</h5>
             </li>
             <li>
-                <h5> 1x NT$750</h5>
+                <h5> 1x NT 750</h5>
             </li>
             <li>
                 <a href="#"><i class="fas fa-trash-alt trash"></i></a>

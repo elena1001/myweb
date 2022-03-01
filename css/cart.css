@@ -233,7 +233,7 @@
 
 @media screen and (max-width: 575.98px){
     .wrapper_cart{
-        width:320px;
+        width:350px;
     }
     .banner_cart{
         margin-top: 20px;
@@ -245,7 +245,7 @@
         font-size: 14px;
       }
     .top_cart h4{
-        font-size: 13px;
+        font-size: 14px;
      }
      .top_cart ul{
         margin-top: 20px;
@@ -262,13 +262,12 @@
         font-size: 8px;
         width:40px;
         outline: none; 
-        border:none;
      }
     .main_carttop li{
         font-size: 10px;
     }
     .main_cartmid h5{
-        font-size: 10px;
+        font-size: 14px;
         line-height: 1.5;
         text-align: center;
         padding: 5px;
@@ -286,13 +285,13 @@
         font-size: 14px;
     }
     .downcart_produ{
-        width:320px;
+        width:350px;
     }
     .downcart_produ h4{
-        font-size: 18px;
+        font-size: 16px;
     }
     .swiper-slide a{
-        font-size: 16px;
+        font-size: 14px;
     }
     .swiper-slide span{
         top: 30%;

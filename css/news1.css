@@ -170,23 +170,23 @@ nav a:hover{
         font-size: 14px;
     }
     nav{
-        width: 320px;
+        width: 90%;
         padding: 0 10px;
     }
     nav a{
-        font-size: 14px;
+        font-size: 18px;
     }
     .news_list{
-        width:320px;
+        width:90%;
     }
     .news_post{
-        width:180px;
+        width:90%;
     }
     .news_list h3{
-        font-size: 16px;
+        font-size: 18px;
     }
     .news_list h4{
-        font-size: 16px;
+        font-size: 18px;
     }
     .swiper {
         width: 100%;
@@ -202,14 +202,14 @@ nav a:hover{
         font-size: 24px;
     }
     nav{
-        width: 500px;
+        width: 550px;
     }
     nav a{
         font-size: 18px;
     }
 
     .news_list{
-        width:500px;
+        width:550px;
     }
     .news_post{
         width:220px;
