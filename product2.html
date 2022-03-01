@@ -103,7 +103,7 @@
             <a href="#" class="products_card_top">
                 <div class="products_card__topin">
                     <img src="./product1/cake7.png" alt="">
-                    <span>加入購物車</span>
+                    <span class=" product_add">加入購物車</span>
                 </div>
             </a>
             <a href="#" class="products_card_down">
@@ -115,7 +115,7 @@
             <a href="#" class="products_card_top">
                 <div class="products_card__topin">
                     <img src="./product1/cake8.png" alt="">
-                    <span>加入購物車</span>
+                    <span class=" product_add">加入購物車</span>
                 </div>
             </a>
             <a href="#" class="products_card_down">
@@ -127,7 +127,7 @@
             <a href="#" class="products_card_top">
                 <div class="products_card__topin">
                     <img src="./product1/cake9.png" alt="">
-                    <span>加入購物車</span>
+                    <span class=" product_add">加入購物車</span>
                 </div>
             </a>
             <a href="#" class="products_card_down">
@@ -139,7 +139,7 @@
             <a href="#" class="products_card_top">
                 <div class="products_card__topin">
                     <img src="./product1/cake6.png" alt="">
-                    <span>加入購物車</span>
+                    <span class=" product_add">加入購物車</span>
                 </div>
             </a>
             <a href="#" class="products_card_down">
@@ -151,7 +151,7 @@
             <a href="#" class="products_card_top">
                 <div class="products_card__topin">
                     <img src="./product1/cake4.png" alt="">
-                    <span>加入購物車</span>
+                    <span class=" product_add">加入購物車</span>
                 </div>
             </a>
             <a href="#" class="products_card_down">
@@ -201,6 +201,14 @@
   <script src="./js/all.js"></script>
     <script>
       AOS.init();
+
+      var button_product_add = document.getElementsByClassName("product_add");
+      for (let i =0; i < button_product_add.length; i++) {
+        button_product_add[i].addEventListener("click",function(){
+        alert("已加入購物車");
+        });
+      }
+
     </script> 
 </body>
 </html>

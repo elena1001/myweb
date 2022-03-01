@@ -216,13 +216,11 @@
       AOS.init();
 
       var button_product_add = document.getElementsByClassName("product_add");
-      button_product_add[0].addEventListener("click",function(){
-        console.log("ttt");
-        // for (let i =0; i < product_add.lenght; i++) {
-          alert("已加入購物車");
-          
-        // }
-      });
+      for (let i =0; i < button_product_add.length; i++) {
+        button_product_add[i].addEventListener("click",function(){
+        alert("已加入購物車");
+        });
+      }
     </script> 
 </body>
 </html>
