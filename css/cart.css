@@ -261,6 +261,8 @@
     .amount_number{
         font-size: 8px;
         width:40px;
+        outline: none; 
+        border:none;
      }
     .main_carttop li{
         font-size: 10px;
