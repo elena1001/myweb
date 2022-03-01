@@ -156,7 +156,7 @@
     margin-top: 50px;
     height:500px;
     background-image: url(../mainpage/ig.png);
-    background-size: 100% 100%;
+    background-size: 100%;
     background-position: bottom;
     background-repeat: no-repeat;
 }
@@ -214,12 +214,10 @@
         font-size: 16px;
     }
     .product_carousel{
-        width: 320px;
+        width:80%;
     }
-    .main4 {
-        margin-top: 0;
-        height:300px;
-        background-size: 100% 80%;
+    .main4{
+        height:200px;
     }
   }
   
@@ -270,12 +268,7 @@
         width:120px; 
     }
     .product_carousel{
-        width: 500px;
-    }
-    .main4 {
-        margin-top: 0;
-        height:300px;
-        background-size: 100% 90%;
+        width: 80%;
     }
   }
   
@@ -315,10 +308,6 @@
     .product_carousel{
         width: 700px;
     }
-    .main4 {
-        margin-top: 0;
-        background-size: 100% 90%;
-    }
   }
   
   @media screen and (min-width:992px) and (max-width:1199.98px){
@@ -350,10 +339,7 @@
     .product_carousel{
         width: 900px;
     }
-    .main4 {
-        margin-top: 0;
-        background-size: 100% 90%;
-    }
+
   }
   
   @media screen and (min-width:1200px) and (max-width:1399.98px){
