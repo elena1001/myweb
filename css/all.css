@@ -183,10 +183,18 @@ header{
   }
 
   /* -----浮動購物車--------- */
-.float_cartmain{
-
+.float_cart1{
+    position:relative;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.973);
 }
-
+.float_cart_text{
+    text-align: center;
+    line-height: 150px;
+}
+.none{
+    display:none;
+}
 .float_cart_up{
     position: absolute;
     right:0px;
@@ -203,6 +211,7 @@ header{
     height:200px;
     width:400px;
 }
+
 .float_cart ul{
     display:flex;
     width: 400px;
@@ -235,8 +244,10 @@ header{
     color: #90AACB;
 }
 .to_cart{
-    background-color: rgba(255, 255, 255, 0.973);
-    padding-top: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
 }
 .to_cart a{
     text-decoration: none;

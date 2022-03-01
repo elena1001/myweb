@@ -31,22 +31,11 @@
           <li class="user"><a href="./login.html"><i class="fas fa-user"></i></a></li>
           <li class="shop"><a href="#"><i class="fas fa-shopping-cart"></i></a>
             <div class="float_cart">
-              <ul class="float_cartmain">
-                  <li>
-                      <img src="./product/products1.png" alt="">
-                  </li>
-                  <li>
-                      <h5>草莓乳酪塔</h5>
-                  </li>
-                  <li>
-                      <h5> 1x NT$750</h5>
-                  </li>
-                  <li>
-                      <a href="#"><i class="fas fa-trash-alt trash"></i></a>
-                  </li>
-              </ul> 
+              <div class="float_cart1">
+              <h4 class="float_cart_text">購物車裡是空的</h4>
               <div class="to_cart">
                 <a href="./cart.html">前往購物車</a>
+              </div>
               </div>
             </div>
           </li> 
@@ -198,16 +187,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./js/all.js"></script>
-    <script>
-      AOS.init();
-
-      var button_product_add = document.getElementsByClassName("product_add");
-      for (let i =0; i < button_product_add.length; i++) {
-        button_product_add[i].addEventListener("click",function(){
-        alert("已加入購物車");
-        });
-      }
-
-    </script> 
+  <script src="./js/product1.js"></script>
 </body>
 </html>
