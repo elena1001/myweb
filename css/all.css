@@ -184,9 +184,10 @@ header{
 
   /* -----浮動購物車--------- */
 .float_cart1{
-    position:relative;
+    /* position:relative;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.973);
+    border:2px solid blue; */
 }
 .float_cart_text{
     text-align: center;
@@ -212,8 +213,9 @@ header{
     z-index: 9;
     display:none;
     background-color: rgba(255, 255, 255, 0.973);
-    height:200px;
+    
     width:400px;
+    border:2px solid red;
 }
 
 .float_cart ul{
@@ -248,10 +250,11 @@ header{
     color: #90AACB;
 }
 .to_cart{
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    right: 0;
+    right: 0; */
     width: 100%;
+    border:2px solid green;
 }
 .to_cart a{
     text-decoration: none;

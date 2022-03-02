@@ -9,22 +9,25 @@ for (let i =0; i < button_product_add.length; i++) {
 }
 
 var button_cart_add = document.getElementsByClassName("products_card");
+let products_pic = document.getElementsByClassName("products_pic");
+let products_name = document.getElementsByClassName("products_name");
+let products_price = document.getElementsByClassName("products_price");
 for(let i = 0 ; i < button_cart_add.length; i++){
   button_cart_add[i].addEventListener("click",function(){
-    // let products_pic = document.getElementsByClassName("products_pic")[1];
-    // let products_name = document.getElementsByClassName("products_name")[1];
-    // let products_price = document.getElementsByClassName("products_price")[1];
+    let products_pic1 =products_pic[i].src;
+    let products_name1 = products_name[i].innerHTML;
+    let products_price1 = products_price[i].innerHTML;
     let list_item =`
     <div>
         <ul class="float_cartmain">
             <li>
-                <img src="./product1/cake6.png" alt="">
+                <img src="${products_pic1}" alt="">
             </li>
             <li>
-                <h5>戀戀梅果巧克</h5>
+                <h5>${products_name1}</h5>
             </li>
             <li>
-                <h5> 1x NT 750</h5>
+                <h5> NT ${products_price1}</h5>
             </li>
             <li>
                 <a href="#"><i class="fas fa-trash-alt trash"></i></a>
@@ -32,17 +35,18 @@ for(let i = 0 ; i < button_cart_add.length; i++){
         </ul> 
       </div> `;
   
-  let cart_list = document.getElementsByClassName("float_cart")[0];
-  cart_list.insertAdjacentHTML("afterbegin",list_item);
+  let cart_list = document.getElementsByClassName("float_cart1")[0];
+  cart_list.insertAdjacentHTML("afterend",list_item);
 
-  let float_cart_text = document.getElementsByClassName("float_cart_text")[0];
-  float_cart_text.classList.add("none");
+  // let float_cart_text = document.getElementsByClassName("float_cart_text")[0];
+  // float_cart_text.classList.add("none");
 
   // // 儲存資料到 localStorage
   // let task = {
-  //   "item_id": item_id,
-  //   "name": task_text, // 新增的待辦事項文字
-  //   "star": 0 // 預設 0
+  //   "pic":products_pic,
+  //   "name": products_name, 
+  //   "price": products_price,
+  //   "trash":
   // };
 
   // let tasks = JSON.parse(localStorage.getItem("tasks"));
