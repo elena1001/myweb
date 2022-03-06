@@ -215,7 +215,7 @@ header{
     background-color: rgba(255, 255, 255, 0.973);
     
     width:400px;
-    border:2px solid red;
+   
 }
 
 .float_cart ul{
@@ -254,7 +254,7 @@ header{
     bottom: 0;
     right: 0; */
     width: 100%;
-    border:2px solid green;
+    
 }
 .to_cart a{
     text-decoration: none;

@@ -38,6 +38,9 @@ for(let i = 0 ; i < button_cart_add.length; i++){
   let cart_list = document.getElementsByClassName("float_cart1")[0];
   cart_list.insertAdjacentHTML("afterend",list_item);
 
+  let float_cart_text = document.getElementsByClassName("float_cart_text")[0];
+  float_cart_text.classList.add("none");
+  
   // let float_cart_text = document.getElementsByClassName("float_cart_text")[0];
   // float_cart_text.classList.add("none");
 
